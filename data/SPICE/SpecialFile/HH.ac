@@ -1,0 +1,5 @@
+CHARGE      0.00 ( 0 )
+Formula: H2
+ATOM      1  H   UNK     1       1.572  -0.067   0.016  0.000000        ha
+ATOM      2  H   UNK     2       2.072  -0.067   0.016  0.000000        ha
+BOND    1    1    2    1      H    H
