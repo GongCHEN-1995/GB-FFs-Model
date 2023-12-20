@@ -1,0 +1,33 @@
+Remark line goes here
+MASS
+nv 14.010        0.530               same as nh 
+
+BOND
+cc-nv  435.20   1.373       same as cc-nh, penalty score=  0.0
+hn-nv  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+cd-cc-nv   68.400     123.840   same as cd-cc-nh, penalty score=  0.0
+cc-nv-hn   48.900     115.630   same as cc-nh-hn, penalty score=  0.0
+na-cc-nv   71.800     117.280   same as na-cc-nh, penalty score=  0.0
+hn-nv-hn   40.100     115.120   same as hn-nh-hn, penalty score=  0.0
+
+DIHE
+cd-cc-nv-hn   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=  0.0
+na-cc-nv-hn   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=  0.0
+
+IMPROPER
+h5-na-cc-nd         1.1          180.0         2.0          Using the default value
+cd-nc-cd-nd         1.1          180.0         2.0          Using the default value
+nc-nd-cc-nh         1.1          180.0         2.0          Using the default value
+cc-cd-cd-nd         1.1          180.0         2.0          Using the default value
+cd-na-cc-nv         1.1          180.0         2.0          Using the default value
+c3-cc-na-cc         1.1          180.0         2.0          Using the default value
+cc-hn-nv-hn         1.1          180.0         2.0          Using the default value
+c3-c3-nh-cc         1.1          180.0         2.0          Using the default value
+
+NONBON
+  nv          1.8240  0.1700             same as nh 
+
+
+

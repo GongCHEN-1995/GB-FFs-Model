@@ -1,0 +1,20 @@
+CHARGE      0.00 ( 0 )
+Formula: H2 C1 O1 
+ATOM      1  C1  MOL     1       2.132   0.974   1.522  0.562700         c
+ATOM      2  O1  MOL     1       2.029  -0.195   1.828 -0.515100         o
+ATOM      3  H1  MOL     1       1.509   1.763   2.007 -0.023800        h4
+ATOM      4  H2  MOL     1       2.854   1.313   0.742 -0.023800        h4
+BOND    1    1    2    2     C1   O1
+BOND    2    1    3    1     C1   H1
+BOND    3    4    1    1     H2   C1
+
+CHARGE      0.00 ( 0 )
+Formula: H2 C1 O1 
+ATOM      1  C1  MOL     1       2.132   0.974   1.522  0.562700         c
+ATOM      2  O1  MOL     1       2.029  -0.195   1.828 -0.515100         o
+ATOM      3  H1  MOL     1       1.509   1.763   2.007 -0.023800        h4
+ATOM      4  H2  MOL     1       2.854   1.313   0.742 -0.023800        h4
+BOND    1    1    2    2     C1   O1
+BOND    2    1    3    1     C1   H1
+BOND    3    4    1    1     H2   C1
+

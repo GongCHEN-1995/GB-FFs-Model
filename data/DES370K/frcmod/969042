@@ -1,0 +1,36 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+
+DIHE
+
+IMPROPER
+
+NONBON
+
+
+
+
+Remark line goes here
+MASS
+n+ 14.010        0.530               same as n4 
+
+BOND
+hn-n+  373.20   1.030       same as hn-n4, penalty score=  0.0
+
+ANGLE
+hn-n+-hn   40.600     108.300   same as hn-n4-hn, penalty score=  0.0
+
+DIHE
+
+IMPROPER
+
+NONBON
+  n+          1.8240  0.1700             same as n4 
+
+
+
+

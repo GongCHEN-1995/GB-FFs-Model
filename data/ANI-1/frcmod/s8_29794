@@ -1,0 +1,38 @@
+Remark line goes here
+MASS
+n8 14.010        0.530               same as n3 
+
+BOND
+c3-n8  325.90   1.465       same as c3-n3, penalty score=  0.0
+hn-n8  392.40   1.019       same as hn-n3, penalty score=  0.0
+
+ANGLE
+c2-c3-n8   66.600     111.420   same as c2-c3-n3, penalty score=  0.0
+h1-c3-n8   49.500     109.880   same as h1-c3-n3, penalty score=  0.0
+c3-n8-hn   47.400     109.290   same as c3-n3-hn, penalty score=  0.0
+hn-n8-hn   41.400     106.400   same as hn-n3-hn, penalty score=  0.0
+
+DIHE
+c2-c3-n8-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+os-c3-ce-c2   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score=136.0
+h1-c3-ce-c2   1    0.380       180.000          -3.000      same as hc-c3-c2-c2
+h1-c3-ce-c2   1    0.000         0.000          -2.000      same as hc-c3-c2-c2
+h1-c3-ce-c2   1    1.150         0.000           1.000      same as hc-c3-c2-c2, penalty score=324.0
+ce-ce-n2-os   2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=160.5
+os-c3-ce-ce   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score=136.0
+h4-ce-n2-os   2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=160.5
+h1-c3-ce-ce   1    0.380       180.000          -3.000      same as hc-c3-c2-c2
+h1-c3-ce-ce   1    0.000         0.000          -2.000      same as hc-c3-c2-c2
+h1-c3-ce-ce   1    1.150         0.000           1.000      same as hc-c3-c2-c2, penalty score=411.0
+h1-c3-n8-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+
+IMPROPER
+c3-ce-c2-ha         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 47.1 (use general term))
+c2-c3-ce-ce         1.1          180.0         2.0          Using the default value
+ce-h4-ce-n2         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 75.1 (use general term))
+
+NONBON
+  n8          1.8240  0.1700             same as n3 
+
+
+

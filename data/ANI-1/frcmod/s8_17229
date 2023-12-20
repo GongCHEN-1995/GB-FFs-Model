@@ -1,0 +1,40 @@
+Remark line goes here
+MASS
+n7 14.010        0.530               same as n3 
+nv 14.010        0.530               same as nh 
+
+BOND
+c3-n7  325.90   1.465       same as c3-n3, penalty score=  0.0
+hn-n7  392.40   1.019       same as hn-n3, penalty score=  0.0
+n2-nv  531.40   1.352       same as n2-nh, penalty score=  0.0
+hn-nv  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+c3-n7-c3   63.800     112.350   same as c3-n3-c3, penalty score=  0.0
+c3-n7-hn   47.400     109.290   same as c3-n3-hn, penalty score=  0.0
+h1-c3-n7   49.500     109.880   same as h1-c3-n3, penalty score=  0.0
+c2-c3-n7   66.600     111.420   same as c2-c3-n3, penalty score=  0.0
+c1-c3-n7   67.200     112.730   same as c1-c3-n3, penalty score=  0.0
+c2-n2-nv   71.000     117.610   same as c2-n2-nh, penalty score=  0.0
+hn-nv-n2   50.200     118.140   same as hn-nh-n2, penalty score=  0.0
+hn-nv-hn   40.100     115.120   same as hn-nh-hn, penalty score=  0.0
+
+DIHE
+c2-c3-n7-c3   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+c1-c3-n7-c3   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+h1-c3-n7-c3   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+c2-c3-n7-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+c2-n2-nv-hn   2    5.600       180.000           2.000      same as X -n2-nh-X , penalty score=  0.0
+c1-c3-n7-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+h1-c3-n7-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+
+IMPROPER
+c3-h4-c2-n2         1.1          180.0         2.0          Using the default value
+hn-hn-nv-n2         1.1          180.0         2.0          Using the default value
+
+NONBON
+  n7          1.8240  0.1700             same as n3 
+  nv          1.8240  0.1700             same as nh 
+
+
+

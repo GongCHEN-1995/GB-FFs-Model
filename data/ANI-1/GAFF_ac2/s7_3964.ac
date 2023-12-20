@@ -1,0 +1,22 @@
+CHARGE      0.00 ( 0 )
+Formula: H3 C2 N3 O2 
+ATOM      1  N1  MOL     1       1.774  -0.545  -0.240 -0.693800        nv
+ATOM      2  N2  MOL     1       0.333  -0.130   0.023 -0.063700         n
+ATOM      3  O1  MOL     1      -0.551  -0.932  -0.291 -0.356700        os
+ATOM      4  C1  MOL     1      -1.709  -0.367  -0.173  0.628500        cc
+ATOM      5  N3  MOL     1      -1.638   0.931   0.301 -0.637100        nd
+ATOM      6  C2  MOL     1      -0.265   0.938   0.384  0.738900         c
+ATOM      7  O2  MOL     1       0.329   2.023   0.707 -0.471500         o
+ATOM      8  H1  MOL     1       2.615   0.283  -0.006  0.377800        hn
+ATOM      9  H2  MOL     1       1.811  -1.671  -0.524  0.377800        hn
+ATOM     10  H3  MOL     1      -2.733  -0.816  -0.488  0.100800        h5
+BOND    1    1    8    1     N1   H1
+BOND    2    1    2    1     N1   N2
+BOND    3    2    6    1     N2   C2
+BOND    4    3    4    1     O1   C1
+BOND    5    3    2    1     O1   N2
+BOND    6    4    5    2     C1   N3
+BOND    7    5    6    1     N3   C2
+BOND    8    6    7    2     C2   O2
+BOND    9    9    1    1     H2   N1
+BOND   10   10    4    1     H3   C1

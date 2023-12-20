@@ -1,0 +1,32 @@
+Remark line goes here
+MASS
+n8 14.010        0.530               same as n3 
+
+BOND
+cx-n8  348.50   1.443       same as cx-n3, penalty score=  0.0
+hn-n8  392.40   1.019       same as hn-n3, penalty score=  0.0
+
+ANGLE
+cx-cx-n8   65.100     118.310   same as cx-cx-n3, penalty score=  0.0
+cx-n8-hn   47.900     109.960   same as cx-n3-hn, penalty score=  0.0
+h1-cx-n8   49.400     113.390   same as h1-cx-n3, penalty score=  0.0
+hn-n8-hn   41.400     106.400   same as hn-n3-hn, penalty score=  0.0
+
+DIHE
+c3-c3-cx-cx   1    0.180         0.000          -3.000      same as c3-c3-c3-c3
+c3-c3-cx-cx   1    0.250       180.000          -2.000      same as c3-c3-c3-c3
+c3-c3-cx-cx   1    0.200       180.000           1.000      same as c3-c3-c3-c3, penalty score=179.0
+c3-c3-cx-hc   1    0.160         0.000           3.000      same as hc-c3-c3-c3, penalty score= 92.0
+oh-c3-cx-cx   9    1.400         0.000           3.000      same as X -c3-c3-X , penalty score= 92.0
+oh-c3-cx-hc   1    0.000         0.000          -3.000      same as hc-c3-c3-oh
+oh-c3-cx-hc   1    0.250         0.000           1.000      same as hc-c3-c3-oh, penalty score= 92.0
+cx-cx-n8-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score= 92.0
+h1-cx-n8-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score= 92.0
+
+IMPROPER
+
+NONBON
+  n8          1.8240  0.1700             same as n3 
+
+
+

@@ -3,10 +3,10 @@ from torch import Tensor, LongTensor
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.modules.linear import Linear
-
 from src.GB_FFs.MolProcessingModel import GAT, SMU
 
 class VDW(nn.Module):
+    
     def __init__(self, d_model=128, activation='relu', leakyrelu=0.1):
         super(VDW, self).__init__()
         self.model_type = 'VDW'
@@ -26,7 +26,7 @@ class VDW(nn.Module):
         out = self.activation(self.node(x1))
         out = self.linear3(self.activation(self.linear2(self.activation(self.linear1(out)))))
         return F.relu(out)
-
+    
 class BOND(nn.Module):
     def __init__(self, d_model=128, activation='relu', leakyrelu=0.1):
         super(BOND, self).__init__()
@@ -49,10 +49,10 @@ class BOND(nn.Module):
         out = self.linear3(self.activation(self.linear2(self.activation(self.linear1(out)))))
         return F.relu(out)
 
-class BOND_MORSE(nn.Module):
+class BOND_UB(nn.Module):
     def __init__(self, d_model=128, activation='relu', leakyrelu=0.1):
-        super(BOND_MORSE, self).__init__()
-        self.model_type = 'BOND_MORSE'
+        super(BOND_UB, self).__init__()
+        self.model_type = 'BOND'
         self.d_model = d_model
         self.node = Linear(d_model, d_model)
         self.linear1 = Linear(d_model, d_model)
@@ -70,7 +70,7 @@ class BOND_MORSE(nn.Module):
         out = self.activation(self.node(x1) + self.node(x2))
         out = self.linear3(self.activation(self.linear2(self.activation(self.linear1(out)))))
         return F.relu(out)
-
+    
 class ANGLE(nn.Module):
     def __init__(self, d_model=128, activation='relu', leakyrelu=0.1):
         super(ANGLE, self).__init__()
@@ -98,7 +98,7 @@ class ANGLE(nn.Module):
 class ANGLE_UB(nn.Module):
     def __init__(self, d_model=128, activation='relu', leakyrelu=0.1):
         super(ANGLE_UB, self).__init__()
-        self.model_type = 'ANGLE_UB'
+        self.model_type = 'ANGLE'
         self.d_model = d_model
         self.node1 = Linear(d_model, d_model)
         self.node2 = Linear(d_model, d_model)
@@ -118,7 +118,7 @@ class ANGLE_UB(nn.Module):
         out = self.linear3(self.activation(self.linear2(self.activation(self.linear1(out)))))
         out = torch.cat([out[:,:1],10*torch.sigmoid(out[:,1:2]),out[:,2:]],dim=1)
         return F.relu(out)
-    
+
 class IMPTORS(nn.Module):
     def __init__(self, d_model=128, activation='relu', leakyrelu=0.1):
         super(IMPTORS, self).__init__()
@@ -166,7 +166,6 @@ class TORSION(nn.Module):
         out = self.linear3(self.activation(self.linear2(self.activation(self.linear1(out)))))
         return out
 
-# charge transfer model
 class CHARGE(nn.Module):
     def __init__(self, d_model=128, activation='relu', leakyrelu=0.1):
         super(CHARGE, self).__init__()
@@ -189,7 +188,7 @@ class CHARGE(nn.Module):
         return out
     
 class ParaGenerator(nn.Module):
-    def __init__(self, d_model=128, activation='relu', bond_morse=False, angle_ub=False, leakyrelu=0.1):
+    def __init__(self, d_model=128, activation='relu', leakyrelu=0.1, bool_ub=False):
         super(ParaGenerator, self).__init__()
         self.model_type = 'ParaGenerator'
         self.d_model = d_model
@@ -199,13 +198,13 @@ class ParaGenerator(nn.Module):
             self.activation = nn.LeakyReLU(leakyrelu)
         elif activation == 'SMU':
             self.activation = SMU()
-            
+        
         self.VDW = VDW(d_model=d_model, activation=activation, leakyrelu=leakyrelu)
-        if bond_morse:
-            self.BOND = BOND_MORSE(d_model=d_model, activation=activation, leakyrelu=leakyrelu)
+        if bool_ub:
+            self.BOND = BOND_UB(d_model=d_model, activation=activation, leakyrelu=leakyrelu)
         else:
             self.BOND = BOND(d_model=d_model, activation=activation, leakyrelu=leakyrelu)
-        if angle_ub:
+        if bool_ub:
             self.ANGLE = ANGLE_UB(d_model=d_model, activation=activation, leakyrelu=leakyrelu)
         else:
             self.ANGLE = ANGLE(d_model=d_model, activation=activation, leakyrelu=leakyrelu)
@@ -244,10 +243,9 @@ class ParaGenerator(nn.Module):
         x2 = torch.index_select(node_x, 0, inputs['torsion'][1])
         x3 = torch.index_select(node_x, 0, inputs['torsion'][2])
         x4 = torch.index_select(node_x, 0, inputs['torsion'][3])
-
         outputs['torsion'] = self.TORSION(x1,x2,x3,x4)
         
-        # CHARGE transfer
+        # CHARGE
         transfer_charge = self.CHARGE(edge_x) #bsz, 2*edge_len, 1
         charge_output = torch.bmm(charge_output_mask, transfer_charge).squeeze() #bsz, node_len
         charge_input = torch.bmm(charge_input_mask, transfer_charge).squeeze() #bsz, node_len
@@ -260,11 +258,11 @@ class ParaGenerator(nn.Module):
         return outputs  
     
 class OptimizedPara(nn.Module):
-    def __init__(self, d_model=128, dropout=0.1, num_heads=1, nb_layer=1, activation='relu', bond_morse=False, angle_ub=False, leakyrelu=0.1):
+    def __init__(self, d_model=128, dropout=0.1, num_heads=1, nb_layer=1, activation='relu', leakyrelu=0.1, bool_ub=False):
         super(OptimizedPara, self).__init__()
         self.model_type = 'OptimizedPara'
         self.GAT = GAT(d_model=d_model, dropout=dropout, num_heads=num_heads, nb_layer=nb_layer, activation=activation, leakyrelu=leakyrelu)
-        self.ParaGenerator = ParaGenerator(d_model=d_model, activation=activation, bond_morse=bond_morse, angle_ub=angle_ub, leakyrelu=leakyrelu)
+        self.ParaGenerator = ParaGenerator(d_model=d_model, activation=activation, leakyrelu=leakyrelu, bool_ub=bool_ub)
     def forward(self, inputs):
         node_x, edge_x, charge_input_mask, charge_output_mask = self.GAT(inputs['nodes_features'], inputs['edges_features'])
         outputs = self.ParaGenerator(node_x, edge_x, inputs, charge_input_mask, charge_output_mask)

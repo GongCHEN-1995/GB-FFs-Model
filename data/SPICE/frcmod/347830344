@@ -1,0 +1,97 @@
+Remark line goes here
+MASS
+nu 14.010        0.530               same as nh 
+ns 14.010        0.530               same as n  
+nv 14.010        0.530               same as nh 
+
+BOND
+ca-nu  417.90   1.386       same as ca-nh, penalty score=  0.0
+hn-nu  404.60   1.012       same as hn-nh, penalty score=  0.0
+c3-nu  326.60   1.464       same as c3-nh, penalty score=  0.0
+c -ns  427.60   1.379       same as  c- n, penalty score=  0.0
+cc-ns  425.10   1.381       same as cc- n, penalty score=  0.0
+hn-ns  403.20   1.013       same as hn- n, penalty score=  0.0
+cc-nv  435.20   1.373       same as cc-nh, penalty score=  0.0
+hn-nv  404.60   1.012       same as hn-nh, penalty score=  0.0
+nu-sy  283.70   1.714       same as nh-sy, penalty score=  0.0
+cc-nu  435.20   1.373       same as cc-nh, penalty score=  0.0
+
+ANGLE
+ca-ca-nu   68.300     120.950   same as ca-ca-nh, penalty score=  0.0
+ca-sy-nu   62.800     105.500   same as ca-sy-nh, penalty score=  0.0
+ca-nu-hn   48.400     116.070   same as ca-nh-hn, penalty score=  0.0
+c3-nu-ca   63.400     119.980   same as c3-nh-ca, penalty score=  0.0
+h1-c3-nu   49.600     109.790   same as h1-c3-nh, penalty score=  0.0
+ca-c3-nu   66.500     111.390   same as ca-c3-nh, penalty score=  0.0
+c3-nu-hn   46.100     115.990   same as c3-nh-hn, penalty score=  0.0
+ca-c -ns   67.700     115.250   same as ca-c -n , penalty score=  0.0
+c -ns-cc   64.700     123.270   same as c -n -cc, penalty score=  0.0
+c -ns-hn   48.300     117.550   same as c -n -hn, penalty score=  0.0
+ns-c -o    74.200     123.050   same as n -c -o , penalty score=  0.0
+nd-cc-ns   71.500     123.000   same as n -cc-nd, penalty score=  0.0
+ns-cc-nv   71.900     116.940   same as n -cc-nh, penalty score=  0.0
+cc-ns-hn   47.900     119.260   same as cc-n -hn, penalty score=  0.0
+cc-nv-hn   48.900     115.630   same as cc-nh-hn, penalty score=  0.0
+nd-cc-nv   72.400     120.650   same as nd-cc-nh, penalty score=  0.0
+hn-nv-hn   40.100     115.120   same as hn-nh-hn, penalty score=  0.0
+hn-nu-sy   43.400     110.910   same as hn-nh-sy, penalty score=  0.0
+cc-nu-sy   61.200     122.520   same as cc-nh-sy, penalty score=  0.0
+nu-sy-o    70.200     106.230   same as nh-sy-o , penalty score=  0.0
+cd-cc-nu   68.400     123.840   same as cd-cc-nh, penalty score=  0.0
+nu-cc-os   72.900     116.680   same as nh-cc-os, penalty score=  0.0
+cc-nu-hn   48.900     115.630   same as cc-nh-hn, penalty score=  0.0
+
+DIHE
+ca-ca-nu-hn   4    4.200       180.000           2.000      same as X -ca-nh-X , penalty score=  0.0
+ca-ca-nu-c3   4    4.200       180.000           2.000      same as X -ca-nh-X , penalty score=  0.0
+hn-nu-sy-ca   6    0.600       180.000           2.000      same as X -nh-sy-X , penalty score=  0.0
+cc-nu-sy-ca   6    0.600       180.000           2.000      same as X -nh-sy-X , penalty score=  0.0
+h1-c3-nu-ca   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+ca-c3-nu-ca   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+h1-c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+ca-c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+ca-c -ns-cc   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+ca-c -ns-hn   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+nd-cc-ns-c    4    6.600       180.000           2.000      same as X -n -cc-X , penalty score=  0.0
+nv-cc-ns-c    4    6.600       180.000           2.000      same as X -n -cc-X , penalty score=  0.0
+o -c -ns-cc   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+o -c -ns-hn   1    2.500       180.000          -2.000      same as hn-n -c -o 
+o -c -ns-hn   1    2.000         0.000           1.000      same as hn-n -c -o , penalty score=  0.0
+ns-cc-nv-hn   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=  0.0
+nd-cc-ns-hn   4    6.600       180.000           2.000      same as X -n -cc-X , penalty score=  0.0
+nd-cc-nv-hn   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=  0.0
+nv-cc-ns-hn   4    6.600       180.000           2.000      same as X -n -cc-X , penalty score=  0.0
+cd-cc-nu-sy   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=  0.0
+os-cc-nu-sy   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=  0.0
+hn-nu-sy-o    6    0.600       180.000           2.000      same as X -nh-sy-X , penalty score=  0.0
+cc-nu-sy-o    6    0.600       180.000           2.000      same as X -nh-sy-X , penalty score=  0.0
+nu-cc-os-nc   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+cd-cc-nu-hn   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=  0.0
+os-cc-nu-hn   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=  0.0
+cd-cc-os-nc   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+
+IMPROPER
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-ca-sy         1.1          180.0         2.0          Using the default value
+ca-ca-ca-nu         1.1          180.0         2.0          Using the default value
+c3-ca-nu-hn         1.1          180.0         2.0          Using the default value
+c3-ca-ca-nb         1.1          180.0         2.0          Using the default value
+ca-h4-ca-nb         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 44.3 (use general term))
+ca-nb-ca-nd         1.1          180.0         2.0          Using the default value
+c -ca-ca-nb         1.1          180.0         2.0          Using the default value
+ca-ns-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c -cc-ns-hn         1.1          180.0         2.0          Same as X -X -n -hn, penalty score=  6.0 (use general term))
+nd-ns-cc-nv         1.1          180.0         2.0          Using the default value
+cc-hn-nv-hn         1.1          180.0         2.0          Using the default value
+cc-hn-nu-sy         1.1          180.0         2.0          Using the default value
+cd-nu-cc-os         1.1          180.0         2.0          Using the default value
+c3-cc-cd-cd         1.1          180.0         2.0          Using the default value
+c3-cd-cd-nc         1.1          180.0         2.0          Using the default value
+
+NONBON
+  nu          1.8240  0.1700             same as nh 
+  ns          1.8240  0.1700             same as n  
+  nv          1.8240  0.1700             same as nh 
+
+
+

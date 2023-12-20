@@ -1,0 +1,39 @@
+Remark line goes here
+MASS
+nu 14.010        0.530               same as nh 
+
+BOND
+c3-nu  326.60   1.464       same as c3-nh, penalty score=  0.0
+n2-nu  531.40   1.352       same as n2-nh, penalty score=  0.0
+hn-nu  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+c3-nu-n2   67.800     112.350   same as c3-nh-n2, penalty score=  0.0
+c3-nu-hn   46.100     115.990   same as c3-nh-hn, penalty score=  0.0
+h1-c3-nu   49.600     109.790   same as h1-c3-nh, penalty score=  0.0
+cc-n2-nu   70.500     118.470   same as cc-n2-nh, penalty score=  0.0
+hn-nu-n2   50.200     118.140   same as hn-nh-n2, penalty score=  0.0
+n2-cc-nc   69.800     125.700   same as nc-cc-nc, penalty score=  2.8
+n2-cc-na   70.600     121.950   same as na-cc-nc, penalty score=  2.8
+
+DIHE
+cc-n2-nu-c3   2    5.600       180.000           2.000      same as X -n2-nh-X , penalty score=  0.0
+nc-cc-n2-nu   2    9.500       180.000           2.000      same as X -cc-nc-X , penalty score=218.5
+na-cc-n2-nu   2    9.500       180.000           2.000      same as X -cc-nc-X , penalty score=218.5
+h1-c3-nu-n2   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+cc-n2-nu-hn   2    5.600       180.000           2.000      same as X -n2-nh-X , penalty score=  0.0
+nc-cd-os-na   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+h5-cd-os-na   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+h1-c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+
+IMPROPER
+c3-hn-nu-n2         1.1          180.0         2.0          Using the default value
+n2-na-cc-nc         1.1          180.0         2.0          Using the default value
+h5-nc-cd-os         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 67.5 (use general term))
+cc-hn-na-os         1.1          180.0         2.0          Using the default value
+
+NONBON
+  nu          1.8240  0.1700             same as nh 
+
+
+

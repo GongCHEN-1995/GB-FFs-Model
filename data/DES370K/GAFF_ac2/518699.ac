@@ -1,0 +1,44 @@
+CHARGE      0.00 ( 0 )
+Formula: H7 C2 N1 
+ATOM      1  C1  MOL     1      -0.539   2.979   1.346 -0.137100        c3
+ATOM      2  C2  MOL     1       0.447   1.922   0.847  0.148800        c3
+ATOM      3  N1  MOL     1       0.552   0.721   1.678 -0.905800        n8
+ATOM      4  H1  MOL     1      -1.555   2.555   1.403  0.036033        hc
+ATOM      5  H2  MOL     1      -0.557   3.848   0.666  0.036033        hc
+ATOM      6  H3  MOL     1      -0.246   3.327   2.352  0.036033        hc
+ATOM      7  H4  MOL     1       0.152   1.596  -0.169  0.050700        h1
+ATOM      8  H5  MOL     1       1.458   2.366   0.778  0.050700        h1
+ATOM      9  H6  MOL     1      -0.368   0.274   1.762  0.343800        hn
+ATOM     10  H7  MOL     1       0.830   0.981   2.631  0.343800        hn
+BOND    1    1    4    1     C1   H1
+BOND    2    1    6    1     C1   H3
+BOND    3    2    1    1     C2   C1
+BOND    4    2    3    1     C2   N1
+BOND    5    3    9    1     N1   H6
+BOND    6    3   10    1     N1   H7
+BOND    7    5    1    1     H2   C1
+BOND    8    7    2    1     H4   C2
+BOND    9    8    2    1     H5   C2
+
+CHARGE      1.00 ( 1 )
+Formula: H6 C1 N3 
+ATOM      1  N1  MOL     1       0.435   2.869   2.080 -0.518100        nv
+ATOM      2  C1  MOL     1      -0.210   1.790   2.521  0.534300        cz
+ATOM      3  N2  MOL     1      -1.379   1.923   3.147 -0.502200        nv
+ATOM      4  H1  MOL     1      -1.875   1.095   3.486  0.331700        hn
+ATOM      5  H2  MOL     1      -1.781   2.853   3.289  0.331700        hn
+ATOM      6  N3  MOL     1       0.313   0.579   2.337 -0.502200        nv
+ATOM      7  H3  MOL     1       0.034   3.800   2.222  0.331700        hn
+ATOM      8  H4  MOL     1       1.333   2.768   1.599  0.331700        hn
+ATOM      9  H5  MOL     1       1.210   0.477   1.856  0.331700        hn
+ATOM     10  H6  MOL     1      -0.183  -0.249   2.675  0.331700        hn
+BOND    1    1    7    1     N1   H3
+BOND    2    1    2    2     N1   C1
+BOND    3    2    3    1     C1   N2
+BOND    4    3    5    1     N2   H2
+BOND    5    3    4    1     N2   H1
+BOND    6    6    2    1     N3   C1
+BOND    7    6   10    1     N3   H6
+BOND    8    8    1    1     H4   N1
+BOND    9    9    6    1     H5   N3
+

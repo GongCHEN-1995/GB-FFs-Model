@@ -1,0 +1,52 @@
+CHARGE      0.00 ( 0 )
+Formula: H6 C2 S1 
+ATOM      1  C1  MOL     1       1.762   2.627  -0.535 -0.099100        c3
+ATOM      2  C2  MOL     1       1.200   3.586   0.506  0.005700        c3
+ATOM      3  S1  MOL     1      -0.411   3.070   1.175 -0.381900        sh
+ATOM      4  H1  MOL     1       1.862   1.614  -0.110  0.043367        hc
+ATOM      5  H2  MOL     1       2.756   2.969  -0.869  0.043367        hc
+ATOM      6  H3  MOL     1       1.094   2.577  -1.411  0.043367        hc
+ATOM      7  H4  MOL     1       1.860   3.630   1.393  0.072200        h1
+ATOM      8  H5  MOL     1       1.112   4.612   0.100  0.072200        h1
+ATOM      9  H6  MOL     1      -1.078   3.106   0.002  0.199800        hs
+BOND    1    1    4    1     C1   H1
+BOND    2    1    2    1     C1   C2
+BOND    3    2    3    1     C2   S1
+BOND    4    2    7    1     C2   H4
+BOND    5    5    1    1     H2   C1
+BOND    6    6    1    1     H3   C1
+BOND    7    8    2    1     H5   C2
+BOND    8    9    3    1     H6   S1
+
+CHARGE      0.00 ( 0 )
+Formula: H10 C4 S1 
+ATOM      1  C1  MOL     1       1.994   2.828   3.865 -0.085100        c3
+ATOM      2  C2  MOL     1       0.754   2.619   3.004 -0.007300        c3
+ATOM      3  S1  MOL     1       0.604   0.872   2.557 -0.316200        ss
+ATOM      4  C3  MOL     1      -0.912   0.956   1.572 -0.007300        c3
+ATOM      5  C4  MOL     1      -1.272  -0.432   1.056 -0.085100        c3
+ATOM      6  H1  MOL     1       2.901   2.525   3.316  0.046033        hc
+ATOM      7  H2  MOL     1       1.926   2.231   4.790  0.046033        hc
+ATOM      8  H3  MOL     1       2.087   3.892   4.139  0.046033        hc
+ATOM      9  H4  MOL     1      -0.159   2.928   3.549  0.055700        h1
+ATOM     10  H5  MOL     1       0.813   3.222   2.078  0.055700        h1
+ATOM     11  H6  MOL     1      -1.726   1.364   2.201  0.055700        h1
+ATOM     12  H7  MOL     1      -0.753   1.658   0.730  0.055700        h1
+ATOM     13  H8  MOL     1      -1.436  -1.126   1.898  0.046033        hc
+ATOM     14  H9  MOL     1      -2.196  -0.384   0.456  0.046033        hc
+ATOM     15  H10 MOL     1      -0.461  -0.832   0.424  0.046033        hc
+BOND    1    1    8    1     C1   H3
+BOND    2    1    7    1     C1   H2
+BOND    3    2    9    1     C2   H4
+BOND    4    2    1    1     C2   C1
+BOND    5    3    2    1     S1   C2
+BOND    6    4   11    1     C3   H6
+BOND    7    4    3    1     C3   S1
+BOND    8    5    4    1     C4   C3
+BOND    9    5   13    1     C4   H8
+BOND   10    6    1    1     H1   C1
+BOND   11   10    2    1     H5   C2
+BOND   12   12    4    1     H7   C3
+BOND   13   14    5    1     H9   C4
+BOND   14   15    5    1    H10   C4
+

@@ -1,0 +1,43 @@
+CHARGE      0.00 ( 0 )
+Formula: H8 C7 O1 
+ATOM      1  C1  MOL     1       0.000   0.000   0.000 -0.048800        c3
+ATOM      2  C2  MOL     1       1.335   0.045   0.771 -0.112300        ca
+ATOM      3  C3  MOL     1       1.837   1.228   1.317 -0.095000        ca
+ATOM      4  C4  MOL     1       3.107   1.166   1.963 -0.181500        ca
+ATOM      5  C5  MOL     1       3.774  -0.016   2.136  0.118100        ca
+ATOM      6  C6  MOL     1       3.229  -1.202   1.579 -0.181500        ca
+ATOM      7  C7  MOL     1       2.019  -1.142   0.952 -0.095000        ca
+ATOM      8  O1  MOL     1       4.901  -0.089   2.888 -0.499100        oh
+ATOM      9  H1  MOL     1      -0.672   0.825   0.289  0.042700        hc
+ATOM     10  H2  MOL     1      -0.536  -0.955   0.136  0.042700        hc
+ATOM     11  H3  MOL     1       0.254   0.111  -1.067  0.042700        hc
+ATOM     12  H4  MOL     1       1.323   2.183   1.144  0.133000        ha
+ATOM     13  H5  MOL     1       3.565   2.122   2.250  0.140500        ha
+ATOM     14  H6  MOL     1       3.753  -2.167   1.615  0.140500        ha
+ATOM     15  H7  MOL     1       1.690  -2.105   0.540  0.133000        ha
+ATOM     16  H8  MOL     1       5.270  -1.000   2.792  0.418000        ho
+BOND    1    1   10    1     C1   H2
+BOND    2    1    9    1     C1   H1
+BOND    3    1    2    1     C1   C2
+BOND    4    2    7    7     C2   C7
+BOND    5    2    3    8     C2   C3
+BOND    6    3    4    7     C3   C4
+BOND    7    4    5    8     C4   C5
+BOND    8    4   13    1     C4   H5
+BOND    9    5    8    1     C5   O1
+BOND   10    6   14    1     C6   H6
+BOND   11    6    5    7     C6   C5
+BOND   12    7    6    8     C7   C6
+BOND   13   11    1    1     H3   C1
+BOND   14   12    3    1     H4   C3
+BOND   15   15    7    1     H7   C7
+BOND   16   16    8    1     H8   O1
+
+CHARGE      0.00 ( 0 )
+Formula: H2 O1 
+ATOM      1  O1  MOL     1       0.812   2.780   0.611 -0.785000        oh
+ATOM      2  H1  MOL     1       1.534   2.459   1.197  0.392000        ho
+ATOM      3  H2  MOL     1       0.241   3.327   1.197  0.392000        ho
+BOND    1    1    3    1     O1   H2
+BOND    2    1    2    1     O1   H1
+

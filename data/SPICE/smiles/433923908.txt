@@ -1,0 +1,1 @@
+c1coc(c1[C@H]1C[C@@]2([C@H](C(=O)O1)CC[C@@]1([C@H]2[C@H]2C=C[C@@]1(C(=O)O2)O)C)C)Br	

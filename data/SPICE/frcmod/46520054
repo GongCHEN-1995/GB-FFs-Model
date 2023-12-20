@@ -1,0 +1,62 @@
+Remark line goes here
+MASS
+ns 14.010        0.530               same as n  
+
+BOND
+cd-ns  425.10   1.381       same as cd- n, penalty score=  0.0
+c -ns  427.60   1.379       same as  c- n, penalty score=  0.0
+hn-ns  403.20   1.013       same as hn- n, penalty score=  0.0
+
+ANGLE
+cc-cd-ns   68.900     121.330   same as cc-cd-n , penalty score=  0.0
+cc-c -ns   69.100     112.700   same as cc-c -n , penalty score=  0.0
+c -ns-cd   64.700     123.270   same as c -n -cd, penalty score=  0.0
+cd-ns-hn   47.900     119.260   same as cd-n -hn, penalty score=  0.0
+cl-cd-ns   65.848     113.785   Calculated using  n-c2-cl, penalty score= 30.0
+ns-c -o    74.200     123.050   same as n -c -o , penalty score=  0.0
+ns-c -ns   72.900     113.560   same as n -c -n , penalty score=  0.0
+c -ns-hn   48.300     117.550   same as c -n -hn, penalty score=  0.0
+c -ns-c    63.700     127.080   same as c -n -c , penalty score=  0.0
+
+DIHE
+c3-c3-ce-c2   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score=136.0
+hc-c3-ce-c2   1    0.380       180.000          -3.000      same as hc-c3-c2-c2
+hc-c3-ce-c2   1    0.000         0.000          -2.000      same as hc-c3-c2-c2
+hc-c3-ce-c2   1    1.150         0.000           1.000      same as hc-c3-c2-c2, penalty score=237.0
+cd-cc-ce-c2   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+c -cc-ce-c2   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+cd-cc-ce-c3   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+c -cc-ce-c3   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+c3-c3-ce-cc   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score=136.0
+hc-c3-ce-cc   1    0.380       180.000          -3.000      same as hc-c3-c2-c2
+hc-c3-ce-cc   1    0.000         0.000          -2.000      same as hc-c3-c2-c2
+hc-c3-ce-cc   1    1.150         0.000           1.000      same as hc-c3-c2-c2, penalty score=324.0
+cc-cd-ns-c    4    6.600       180.000           2.000      same as X -n -cd-X , penalty score=  0.0
+cc-cd-ns-hn   4    6.600       180.000           2.000      same as X -n -cd-X , penalty score=  0.0
+cc-c -ns-c    4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+cc-c -ns-hn   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+o -c -ns-cd   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+ns-c -ns-cd   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+ns-c -ns-c    4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+ns-c -ns-hn   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+cl-cd-ns-c    4    6.600       180.000           2.000      same as X -n -cd-X , penalty score=  0.0
+o -c -ns-c    4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+o -c -ns-hn   1    2.500       180.000          -2.000      same as hn-n -c -o 
+o -c -ns-hn   1    2.000         0.000           1.000      same as hn-n -c -o , penalty score=  0.0
+cl-cd-ns-hn   4    6.600       180.000           2.000      same as X -n -cd-X , penalty score=  0.0
+
+IMPROPER
+c3-ce-c2-ha         1.1          180.0         2.0          Using the default value
+c2-c3-ce-cc         1.1          180.0         2.0          Using the default value
+c -cd-cc-ce         1.1          180.0         2.0          Using the default value
+cc-cl-cd-ns         1.1          180.0         2.0          Using the default value
+c -cd-ns-hn         1.1          180.0         2.0          Same as X -X -n -hn, penalty score=  6.0 (use general term))
+ns-ns-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c -c -ns-hn         1.1          180.0         2.0          Same as X -X -n -hn, penalty score=  6.0 (use general term))
+cc-ns-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+
+NONBON
+  ns          1.8240  0.1700             same as n  
+
+
+

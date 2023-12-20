@@ -1,0 +1,26 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+
+DIHE
+c3-c3-cx-cx   1    0.180         0.000          -3.000      same as c3-c3-c3-c3
+c3-c3-cx-cx   1    0.250       180.000          -2.000      same as c3-c3-c3-c3
+c3-c3-cx-cx   1    0.200       180.000           1.000      same as c3-c3-c3-c3, penalty score=179.0
+c3-c3-cx-c3   1    0.180         0.000          -3.000      same as c3-c3-c3-c3
+c3-c3-cx-c3   1    0.250       180.000          -2.000      same as c3-c3-c3-c3
+c3-c3-cx-c3   1    0.200       180.000           1.000      same as c3-c3-c3-c3, penalty score= 92.0
+hc-c3-cx-c3   1    0.160         0.000           3.000      same as hc-c3-c3-c3, penalty score= 92.0
+cx-cx-os-c3   1    0.383         0.000          -3.000      same as c3-c3-os-c3
+cx-cx-os-c3   1    0.100       180.000           2.000      same as c3-c3-os-c3, penalty score=179.0
+h1-cx-os-c3   3    1.150         0.000           3.000      same as X -c3-os-X , penalty score= 92.0
+hc-c3-cx-cx   1    0.160         0.000           3.000      same as hc-c3-c3-c3, penalty score=179.0
+
+IMPROPER
+
+NONBON
+
+
+

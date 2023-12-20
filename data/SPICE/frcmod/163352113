@@ -1,0 +1,33 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+nd-cd-oh   73.500     121.120   same as nc-cd-oh, penalty score=  1.5
+sh-cc-ss   61.800     121.370   same as ss-cc-ss, penalty score=  1.5
+
+DIHE
+c3-cc-ss-cc   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=232.0
+cc-cd-oh-ho   2    2.100       180.000           2.000      same as X -c2-oh-X , penalty score=232.0
+nd-cc-ss-cc   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=232.0
+sh-cc-ss-cc   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=232.0
+cd-cc-ss-cc   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=232.0
+nd-cd-oh-ho   2    2.100       180.000           2.000      same as X -c2-oh-X , penalty score=232.0
+nd-cc-sh-hs   2    1.000       180.000           2.000      same as X -c2-sh-X , penalty score=232.0
+ss-cc-sh-hs   2    1.000       180.000           2.000      same as X -c2-sh-X , penalty score=232.0
+
+IMPROPER
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-ca-os         1.1          180.0         2.0          Using the default value
+ca-ca-ca-n          1.1          180.0         2.0          Using the default value
+c3-cd-cc-ss         1.1          180.0         2.0          Using the default value
+cc-nd-cd-oh         1.1          180.0         2.0          Using the default value
+nd-sh-cc-ss         1.1          180.0         2.0          Using the default value
+c -c3-n -ca         1.1          180.0         2.0          Same as c2-c2-na-c3, penalty score=300.2)
+c3-n -c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+
+NONBON
+
+
+

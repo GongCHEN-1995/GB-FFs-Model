@@ -1,0 +1,35 @@
+CHARGE      0.00 ( 0 )
+Formula: H4 C6 F2 
+ATOM      1  F1  MOL     1       3.306   1.683   2.034 -0.137900         f
+ATOM      2  C1  MOL     1       3.260   2.134   0.761  0.110900        ca
+ATOM      3  C2  MOL     1       3.341   1.217  -0.278 -0.141000        ca
+ATOM      4  C3  MOL     1       3.293   1.683  -1.591 -0.141000        ca
+ATOM      5  C4  MOL     1       3.166   3.046  -1.815  0.110900        ca
+ATOM      6  C5  MOL     1       3.084   3.963  -0.776 -0.141000        ca
+ATOM      7  C6  MOL     1       3.132   3.497   0.538 -0.141000        ca
+ATOM      8  F2  MOL     1       3.119   3.497  -3.088 -0.137900         f
+ATOM      9  H1  MOL     1       3.441   0.147  -0.054  0.154000        ha
+ATOM     10  H2  MOL     1       3.354   0.994  -2.445  0.154000        ha
+ATOM     11  H3  MOL     1       2.984   5.033  -1.000  0.154000        ha
+ATOM     12  H4  MOL     1       3.072   4.186   1.391  0.154000        ha
+BOND    1    2    1    1     C1   F1
+BOND    2    3    9    1     C2   H1
+BOND    3    3    2    7     C2   C1
+BOND    4    4    3    8     C3   C2
+BOND    5    5    4    7     C4   C3
+BOND    6    5    6    8     C4   C5
+BOND    7    6    7    7     C5   C6
+BOND    8    7    2    8     C6   C1
+BOND    9    7   12    1     C6   H4
+BOND   10    8    5    1     F2   C4
+BOND   11   10    4    1     H2   C3
+BOND   12   11    6    1     H3   C5
+
+CHARGE      0.00 ( 0 )
+Formula: H2 O1 
+ATOM      1  O1  MOL     1       0.812   2.780   0.611 -0.785000        oh
+ATOM      2  H1  MOL     1       1.534   2.459   1.197  0.392000        ho
+ATOM      3  H2  MOL     1       0.241   3.327   1.197  0.392000        ho
+BOND    1    1    3    1     O1   H2
+BOND    2    1    2    1     O1   H1
+

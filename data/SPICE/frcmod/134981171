@@ -1,0 +1,23 @@
+Remark line goes here
+MASS
+
+BOND
+ce-h5  342.50   1.088       same as ce-ha, penalty score=  1.1
+
+ANGLE
+c -nf-ce   67.700     118.530   same as c -nf-c2, penalty score=  2.2
+h5-ce-nf   12.600     113.650   same as h5-ce-ne, penalty score=  0.4
+
+DIHE
+ne-ce-nf-c    2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=138.0
+h5-ce-nf-c    2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=138.0
+
+IMPROPER
+c3-h4-c2-ne         1.1          180.0         2.0          Using the default value
+h5-ne-ce-nf         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 75.4 (use general term))
+c3-nf-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+
+NONBON
+
+
+

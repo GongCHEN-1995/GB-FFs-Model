@@ -1,0 +1,12 @@
+CHARGE      0.00 ( 0 )
+Formula: H2 O1 
+ATOM      1  O1  MOL     1       0.812   2.780   0.611 -0.785000        oh
+ATOM      2  H1  MOL     1       1.534   2.459   1.197  0.392000        ho
+ATOM      3  H2  MOL     1       0.241   3.327   1.197  0.392000        ho
+BOND    1    1    3    1     O1   H2
+BOND    2    1    2    1     O1   H1
+
+CHARGE      -1.00 ( -1 )
+Formula: Br1
+ATOM      1  Br  UNL     1       0.995   0.095  -0.030 -1.000000        br
+

@@ -1,0 +1,38 @@
+Remark line goes here
+MASS
+nv 14.010        0.530               same as nh 
+
+BOND
+c2-nv  416.20   1.387       same as c2-nh, penalty score=  0.0
+hn-nv  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+nv-c2-ss   66.900     111.550   same as nh-c2-ss, penalty score=  0.0
+c2-nv-hn   48.600     115.090   same as c2-nh-hn, penalty score=  0.0
+n2-c2-nv   71.800     124.270   same as n2-c2-nh, penalty score=  0.0
+hn-nv-hn   40.100     115.120   same as hn-nh-hn, penalty score=  0.0
+
+DIHE
+ca-ca-cc-cd   4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=232.0
+ca-ca-cc-c    4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=232.0
+ss-c2-nv-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+n2-c2-nv-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+
+IMPROPER
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-ca-na         1.1          180.0         2.0          Using the default value
+ca-ca-na-cd         1.1          180.0         2.0          Using the default value
+ca-ca-ca-os         1.1          180.0         2.0          Using the default value
+ca-ca-ca-cc         1.1          180.0         2.0          Using the default value
+c -ca-cc-cd         1.1          180.0         2.0          Using the default value
+c3-cc-cd-na         1.1          180.0         2.0          Using the default value
+n2-nv-c2-ss         1.1          180.0         2.0          Using the default value
+c2-hn-nv-hn         1.1          180.0         2.0          Using the default value
+cc-o -c -os         1.1          180.0         2.0          Same as X -o -c -o , penalty score= 49.6 (use general term))
+c3-o -c -os         1.1          180.0         2.0          Using the default value
+
+NONBON
+  nv          1.8240  0.1700             same as nh 
+
+
+

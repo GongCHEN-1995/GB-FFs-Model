@@ -1,0 +1,34 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+c1-c3-ss   61.878     110.775   Calculated with empirical approach for c1-c3-ss
+
+DIHE
+ca-ca-cg-c1   2    0.000       180.000           2.000      same as X -c1-ca-X , penalty score= 97.0
+nd-cc-ss-c3   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=232.0
+cc-cc-ss-c3   1    1.100       180.000          -2.000      same as c2-c2-ss-c3
+cc-cc-ss-c3   1    0.700       180.000           3.000      same as c2-c2-ss-c3, penalty score=319.0
+cc-cc-cx-c3   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score= 92.0
+cc-cc-cx-cx   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score= 92.0
+nd-cc-cx-c3   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score= 92.0
+nd-cc-cx-cx   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score= 92.0
+n3-c3-cx-cc   9    1.400         0.000           3.000      same as X -c3-c3-X , penalty score= 92.0
+h1-c3-cx-cc   9    1.400         0.000           3.000      same as X -c3-c3-X , penalty score= 92.0
+n3-c3-cx-cx   9    1.400         0.000           3.000      same as X -c3-c3-X , penalty score= 92.0
+h1-c3-cx-cx   1    0.160         0.000           3.000      same as hc-c3-c3-c3, penalty score=266.0
+n3-c3-cx-hc   9    1.400         0.000           3.000      same as X -c3-c3-X , penalty score= 92.0
+h1-c3-cx-hc   1    0.150         0.000           3.000      same as hc-c3-c3-hc, penalty score=179.0
+
+IMPROPER
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-ca-cg         1.1          180.0         2.0          Using the default value
+cc-nd-cc-ss         1.1          180.0         2.0          Using the default value
+cc-cx-cc-nd         1.1          180.0         2.0          Using the default value
+
+NONBON
+
+
+

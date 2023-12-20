@@ -1,0 +1,21 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+
+DIHE
+
+IMPROPER
+h5-na-cc-na         1.1          180.0         2.0          Using the default value
+c3-ca-na-cc         1.1          180.0         2.0          Using the default value
+ca-na-ca-nb         1.1          180.0         2.0          Using the default value
+ca-ca-ca-na         1.1          180.0         2.0          Using the default value
+ca-nb-ca-oh         1.1          180.0         2.0          Using the default value
+nb-nb-ca-oh         1.1          180.0         2.0          Using the default value
+
+NONBON
+
+
+

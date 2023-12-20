@@ -1,0 +1,27 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+c1-c1-cy   56.200     178.510   same as c1-c1-c3, penalty score=  7.5
+c1-cy-h1   48.406     109.285   Calculated using c1-c3-h1, penalty score= 41.0
+
+DIHE
+c1-cy-oq-cy   3    1.150         0.000           3.000      same as X -c3-os-X , penalty score= 86.5
+cy-cy-oq-cy   1    0.383         0.000          -3.000      same as c3-c3-os-c3
+cy-cy-oq-cy   1    0.100       180.000           2.000      same as c3-c3-os-c3, penalty score=260.5
+c3-cy-oq-cy   1    0.383         0.000          -3.000      same as c3-c3-os-c3
+c3-cy-oq-cy   1    0.100       180.000           2.000      same as c3-c3-os-c3, penalty score=173.5
+h1-cy-oq-cy   3    1.150         0.000           3.000      same as X -c3-os-X , penalty score= 86.5
+hc-c3-cy-cy   1    0.160         0.000           3.000      same as hc-c3-c3-c3, penalty score=173.5
+hc-c3-cy-oq   1    0.000         0.000          -3.000      same as hc-c3-c3-os
+hc-c3-cy-oq   1    0.250         0.000           1.000      same as hc-c3-c3-os, penalty score= 86.5
+hc-c3-cy-h1   1    0.150         0.000           3.000      same as hc-c3-c3-hc, penalty score=173.5
+
+IMPROPER
+
+NONBON
+
+
+

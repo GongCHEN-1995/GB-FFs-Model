@@ -1,0 +1,27 @@
+Remark line goes here
+MASS
+n8 14.010        0.530               same as n3 
+
+BOND
+n8-nh  432.70   1.416       same as n3-nh, penalty score=  0.0
+hn-n8  392.40   1.019       same as hn-n3, penalty score=  0.0
+
+ANGLE
+c2-nh-n8   67.000     116.870   same as c2-nh-n3, penalty score=  0.0
+hn-n8-nh   50.400     108.310   same as hn-n3-nh, penalty score=  0.0
+hn-n8-hn   41.400     106.400   same as hn-n3-hn, penalty score=  0.0
+
+DIHE
+hn-n8-nh-c2   4    7.600         0.000           2.000      same as X -n3-nh-X , penalty score=  0.0
+
+IMPROPER
+c2-c3-c2-c3         1.1          180.0         2.0          Using the default value
+c2-h4-c2-nh         1.1          180.0         2.0          Using the default value
+c2-c2-nh-n8         1.1          180.0         2.0          Using the default value
+h5-n2-c2-nh         1.1          180.0         2.0          Using the default value
+
+NONBON
+  n8          1.8240  0.1700             same as n3 
+
+
+

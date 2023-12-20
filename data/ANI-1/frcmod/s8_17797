@@ -1,0 +1,43 @@
+Remark line goes here
+MASS
+nu 14.010        0.530               same as nh 
+
+BOND
+ce-nu  412.30   1.390       same as ce-nh, penalty score=  0.0
+c2-nu  416.20   1.387       same as c2-nh, penalty score=  0.0
+hn-nu  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+n2-ce-nu   71.300     125.090   same as n2-ce-nh, penalty score=  0.0
+c2-nu-ce   63.300     127.560   same as c2-nh-ca, penalty score=  2.2
+ce-nu-hn   48.400     115.680   same as ce-nh-hn, penalty score=  0.0
+cg-ce-nu   68.279     118.115   Calculated using nh-ce-cg, penalty score=  0.0
+c2-c2-nu   68.700     124.990   same as c2-c2-nh, penalty score=  0.0
+h4-c2-nu   50.700     115.080   same as h4-c2-nh, penalty score=  0.0
+c2-nu-hn   48.600     115.090   same as c2-nh-hn, penalty score=  0.0
+
+DIHE
+nu-ce-n2-oh   2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=160.5
+cg-ce-n2-oh   2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=160.5
+n2-ce-nu-c2   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=136.0
+n2-ce-nu-hn   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=136.0
+n2-ce-cg-n1   2    0.000       180.000           2.000      same as X -c1-ce-X , penalty score= 97.0
+c2-c2-nu-ce   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+h4-c2-nu-ce   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+nu-ce-cg-n1   2    0.000       180.000           2.000      same as X -c1-ce-X , penalty score= 97.0
+cg-ce-nu-c2   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=136.0
+c2-c2-nu-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+cg-ce-nu-hn   4    4.200       180.000           2.000      same as X -cc-nh-X , penalty score=136.0
+h4-c2-nu-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+
+IMPROPER
+cg-n2-ce-nu         1.1          180.0         2.0          Using the default value
+c2-ce-nu-hn         1.1          180.0         2.0          Using the default value
+c2-h4-c2-nu         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 75.4 (use general term))
+c2-ha-c2-ha         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 47.1 (use general term))
+
+NONBON
+  nu          1.8240  0.1700             same as nh 
+
+
+

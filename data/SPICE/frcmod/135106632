@@ -1,0 +1,16 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+cl-p3-n3   41.900     100.600   same as f -p3-n3, penalty score=  5.3
+
+DIHE
+
+IMPROPER
+
+NONBON
+
+
+

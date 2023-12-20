@@ -1,0 +1,19 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+c2-n3-c3   64.646     118.515   Calculated with empirical approach for c2-n3-c3
+h5-c2-n3   50.900     113.910   same as h5-c2-nh, penalty score=  1.5
+n2-c3-n3   69.300     111.270   same as n2-c3-nh, penalty score=  1.5
+
+DIHE
+
+IMPROPER
+h5-n3-c2-n3         1.1          180.0         2.0          Using the default value
+
+NONBON
+
+
+

@@ -1,7 +1,7 @@
 import re
 import numpy as np
 
-def read_GAFF2_dat(bond_morse=False, angle_ub=False):
+def read_GAFF2_dat(bond_morse=False, bool_ub=False):
     GAFF_dat = './data/gaff2.dat'
     openfile = open(GAFF_dat, 'r')
     data = openfile.read().splitlines()
@@ -15,7 +15,7 @@ def read_GAFF2_dat(bond_morse=False, angle_ub=False):
     for line in data[100:1035]:
         K = float(line[7:12])
         r0 = float(line[16:22])
-        if bond_morse:
+        if bool_ub:
             bond[line[:5].replace(' ','')] = [K/100, r0, 2]
         else:
             bond[line[:5].replace(' ','')] = [K/100, r0]
@@ -25,18 +25,12 @@ def read_GAFF2_dat(bond_morse=False, angle_ub=False):
         new_name = split_name[1] + '-' + split_name[0]
         if new_name not in bond:
             bond[new_name] = bond[name]
-    if bond_morse:
-        bond['ha-ha'] = [100/100, 1.4494199, 2]
-    else:
-        bond['ha-ha'] = [100/100, 1.4494199]
         
     angle = {}
     angle_name = []
     for line in data[1036:6348]:
         angle[line[:8].replace(' ','')] = [float(line[10:16])/10, 10*float(line[22:28])/180]
         angle_name.append(line[:8].replace(' ',''))
-    angle['ce-no-o'] = [86.0/10, 118.22/180*10] 
-    angle['o-sy-f']  = [20.1/10, 105.57/180*10]
 
     for name in angle_name:
         split_name = re.split(r'-', name)
@@ -74,16 +68,6 @@ def read_GAFF2_dat(bond_morse=False, angle_ub=False):
     vdw = {}
     for line in data[7520:7615]:
         vdw[line[2:4].replace(' ','')] = [float(line[14:20]), 10 * np.sqrt(float(line[22:28]))]
-    vdw['hw'] = vdw['ho']
-    vdw['ow'] = vdw['oh']
-    
-    if angle_ub:
-        for name in angle:
-            split_name = re.split(r'-',name)
-            aa = vdw[split_name[0]]
-            bb = vdw[split_name[2]]
-            sigma = aa[0] + bb[0]
-            angle[name] = angle[name] + [sigma, 1]
 
     openfile.close()
     GAFF = {'atom':atom,'vdw':vdw,'bond':bond,'angle':angle,'torsion':torsion,'imptors':imptors}

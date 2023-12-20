@@ -1,0 +1,29 @@
+Remark line goes here
+MASS
+n8 14.010        0.530               same as n3 
+
+BOND
+n -n8  448.70   1.404       same as  n-n3, penalty score=  0.0
+hn-n8  392.40   1.019       same as hn-n3, penalty score=  0.0
+
+ANGLE
+c -n -n8   66.600     120.100   same as c -n -n3, penalty score=  0.0
+hn-n8-n    50.800     108.120   same as hn-n3-n , penalty score=  0.0
+c3-n -n8   65.300     117.560   same as c3-n -n3, penalty score=  0.0
+hn-n8-hn   41.400     106.400   same as hn-n3-hn, penalty score=  0.0
+
+DIHE
+c -n -n8-hn   4    4.300         0.000           2.000      same as X -n -n3-X , penalty score=  0.0
+c3-n -n8-hn   4    4.300         0.000           2.000      same as X -n -n3-X , penalty score=  0.0
+
+IMPROPER
+c3-c3-c2-ce         1.1          180.0         2.0          Using the default value
+c -c2-ce-ha         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 46.8 (use general term))
+ce-n -c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c -c3-n -n8         1.1          180.0         2.0          Using the default value
+
+NONBON
+  n8          1.8240  0.1700             same as n3 
+
+
+

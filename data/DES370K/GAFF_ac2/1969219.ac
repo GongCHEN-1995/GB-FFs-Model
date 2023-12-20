@@ -1,0 +1,40 @@
+CHARGE      0.00 ( 0 )
+Formula: H5 C2 N1 O1 
+ATOM      1  C1  MOL     1       0.264  -0.316   4.532 -0.174100        c3
+ATOM      2  C2  MOL     1       0.406   0.386   3.200  0.656100         c
+ATOM      3  O1  MOL     1       0.593  -0.205   2.146 -0.613100         o
+ATOM      4  N1  MOL     1       0.311   1.748   3.259 -0.683000        nt
+ATOM      5  H1  MOL     1       0.355  -1.405   4.379  0.065033        hc
+ATOM      6  H2  MOL     1      -0.720  -0.106   4.985  0.065033        hc
+ATOM      7  H3  MOL     1       1.051   0.008   5.234  0.065033        hc
+ATOM      8  H4  MOL     1       0.155   2.240   4.142  0.310000        hn
+ATOM      9  H5  MOL     1       0.400   2.277   2.388  0.310000        hn
+BOND    1    1    6    1     C1   H2
+BOND    2    1    7    1     C1   H3
+BOND    3    2    4    1     C2   N1
+BOND    4    2    1    1     C2   C1
+BOND    5    3    2    2     O1   C2
+BOND    6    4    8    1     N1   H4
+BOND    7    5    1    1     H1   C1
+BOND    8    9    4    1     H5   N1
+
+CHARGE      0.00 ( 0 )
+Formula: H5 C2 N1 O1 
+ATOM      1  C1  MOL     1       0.264  -0.316   4.532 -0.174100        c3
+ATOM      2  C2  MOL     1       0.406   0.386   3.200  0.656100         c
+ATOM      3  O1  MOL     1       0.593  -0.205   2.146 -0.613100         o
+ATOM      4  N1  MOL     1       0.311   1.748   3.259 -0.683000        nt
+ATOM      5  H1  MOL     1       0.355  -1.405   4.379  0.065033        hc
+ATOM      6  H2  MOL     1      -0.720  -0.106   4.985  0.065033        hc
+ATOM      7  H3  MOL     1       1.051   0.008   5.234  0.065033        hc
+ATOM      8  H4  MOL     1       0.155   2.240   4.142  0.310000        hn
+ATOM      9  H5  MOL     1       0.400   2.277   2.388  0.310000        hn
+BOND    1    1    6    1     C1   H2
+BOND    2    1    7    1     C1   H3
+BOND    3    2    4    1     C2   N1
+BOND    4    2    1    1     C2   C1
+BOND    5    3    2    2     O1   C2
+BOND    6    4    8    1     N1   H4
+BOND    7    5    1    1     H1   C1
+BOND    8    9    4    1     H5   N1
+

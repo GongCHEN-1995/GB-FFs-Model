@@ -1,0 +1,37 @@
+Remark line goes here
+MASS
+ns 14.010        0.530               same as n  
+
+BOND
+c -ns  427.60   1.379       same as  c- n, penalty score=  0.0
+ns-oh  400.20   1.406       same as  n-oh, penalty score=  0.0
+hn-ns  403.20   1.013       same as hn- n, penalty score=  0.0
+
+ANGLE
+cx-c -ns   67.500     114.570   same as cx-c -n , penalty score=  0.0
+c -ns-oh   68.200     115.510   same as c -n -oh, penalty score=  0.0
+c -ns-hn   48.300     117.550   same as c -n -hn, penalty score=  0.0
+ns-c -o    74.200     123.050   same as n -c -o , penalty score=  0.0
+ho-oh-ns   50.500     101.290   same as ho-oh-n , penalty score=  0.0
+hn-ns-oh   50.400     110.740   same as hn-n -oh, penalty score=  0.0
+
+DIHE
+hc-c3-cx-cx   1    0.160         0.000           3.000      same as hc-c3-c3-c3, penalty score=179.0
+cx-c -ns-oh   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+cx-c -ns-hn   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+c -ns-oh-ho   2    3.000         0.000           2.000      same as X -n -oh-X , penalty score=  0.0
+o -c -ns-oh   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+o -c -ns-hn   1    2.500       180.000          -2.000      same as hn-n -c -o 
+o -c -ns-hn   1    2.000         0.000           1.000      same as hn-n -c -o , penalty score=  0.0
+hc-c3-cx-hc   1    0.150         0.000           3.000      same as hc-c3-c3-hc, penalty score= 92.0
+hn-ns-oh-ho   2    3.000         0.000           2.000      same as X -n -oh-X , penalty score=  0.0
+
+IMPROPER
+cx-ns-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c -hn-ns-oh         1.1          180.0         2.0          Using the default value
+
+NONBON
+  ns          1.8240  0.1700             same as n  
+
+
+

@@ -1,0 +1,1 @@
+c1ccc2c(c1)N=C(c1cc(ccc1S2)Cl)CNCCN(C)C	

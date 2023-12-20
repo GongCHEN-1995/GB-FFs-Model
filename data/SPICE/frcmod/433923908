@@ -1,0 +1,25 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+br-cd-os   65.854     115.665   Calculated using os-ca-br, penalty score= 23.5
+
+DIHE
+cc-cd-os-cd   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+br-cd-os-cd   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+h4-cd-os-cd   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+
+IMPROPER
+cc-cd-cc-ha         1.1          180.0         2.0          Using the default value
+cc-h4-cd-os         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 67.2 (use general term))
+br-cc-cd-os         1.1          180.0         2.0          Using the default value
+c3-cc-cc-cd         1.1          180.0         2.0          Using the default value
+c3-o -c -os        10.5          180.0         2.0          Same as X -X -c -o , penalty score= 24.5 (use general term))
+c2-c3-c2-ha         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 47.1 (use general term))
+
+NONBON
+
+
+

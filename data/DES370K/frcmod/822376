@@ -1,0 +1,58 @@
+Remark line goes here
+MASS
+nu 14.010        0.530               same as nh 
+nv 14.010        0.530               same as nh 
+
+BOND
+c3-nu  326.60   1.464       same as c3-nh, penalty score=  0.0
+cz-nu  488.00   1.339       same as cz-nh, penalty score=  0.0
+hn-nu  404.60   1.012       same as hn-nh, penalty score=  0.0
+cz-nv  488.00   1.339       same as cz-nh, penalty score=  0.0
+hn-nv  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+c3-nu-cz   62.900     125.460   same as c3-nh-cz, penalty score=  0.0
+c3-nu-hn   46.100     115.990   same as c3-nh-hn, penalty score=  0.0
+h1-c3-nu   49.600     109.790   same as h1-c3-nh, penalty score=  0.0
+nu-cz-nv   73.000     120.140   same as nh-cz-nh, penalty score=  0.0
+cz-nu-hn   48.800     121.150   same as cz-nh-hn, penalty score=  0.0
+cz-nv-hn   48.800     121.150   same as cz-nh-hn, penalty score=  0.0
+nv-cz-nv   73.000     120.140   same as nh-cz-nh, penalty score=  0.0
+hn-nv-hn   40.100     115.120   same as hn-nh-hn, penalty score=  0.0
+
+DIHE
+nv-cz-nu-c3   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=462.5
+nu-cz-nv-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=462.5
+h1-c3-nu-cz   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+nv-cz-nu-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=462.5
+nv-cz-nv-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=462.5
+h1-c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+
+IMPROPER
+c3-cz-nu-hn         1.1          180.0         2.0          Using the default value
+nu-nv-cz-nv         1.1          180.0         2.0          Using the default value
+cz-hn-nv-hn         1.1          180.0         2.0          Using the default value
+
+NONBON
+  nu          1.8240  0.1700             same as nh 
+  nv          1.8240  0.1700             same as nh 
+
+
+
+
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+
+DIHE
+
+IMPROPER
+
+NONBON
+
+
+
+

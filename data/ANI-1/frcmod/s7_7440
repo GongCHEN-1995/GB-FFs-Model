@@ -1,0 +1,38 @@
+Remark line goes here
+MASS
+nu 14.010        0.530               same as nh 
+
+BOND
+c3-nu  326.60   1.464       same as c3-nh, penalty score=  0.0
+n2-nu  531.40   1.352       same as n2-nh, penalty score=  0.0
+hn-nu  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+c3-nu-n2   67.800     112.350   same as c3-nh-n2, penalty score=  0.0
+c3-nu-hn   46.100     115.990   same as c3-nh-hn, penalty score=  0.0
+c3-c3-nu   66.200     110.460   same as c3-c3-nh, penalty score=  0.0
+ce-n2-nu   70.600     118.340   same as ce-n2-nh, penalty score=  0.0
+hn-nu-n2   50.200     118.140   same as hn-nh-n2, penalty score=  0.0
+h1-c3-nu   49.600     109.790   same as h1-c3-nh, penalty score=  0.0
+
+DIHE
+ce-n2-nu-c3   2    5.600       180.000           2.000      same as X -n2-nh-X , penalty score=  0.0
+c3-c3-nu-n2   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+c3-c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+ce-ce-n2-nu   2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=160.5
+ce-n2-nu-hn   2    5.600       180.000           2.000      same as X -n2-nh-X , penalty score=  0.0
+h1-c3-nu-n2   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+h4-ce-n2-nu   2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=160.5
+h1-c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+
+IMPROPER
+c3-ce-c2-ha         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 47.1 (use general term))
+c2-ce-ce-ha         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 46.8 (use general term))
+ce-h4-ce-n2         1.1          180.0         2.0          Using the default value
+c3-hn-nu-n2         1.1          180.0         2.0          Using the default value
+
+NONBON
+  nu          1.8240  0.1700             same as nh 
+
+
+

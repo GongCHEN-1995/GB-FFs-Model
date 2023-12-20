@@ -1,0 +1,32 @@
+CHARGE      0.00 ( 0 )
+Formula: H7 C6 N1 O1 
+ATOM      1  C1  MOL     1       1.755  -0.344  -0.808 -0.058900        c3
+ATOM      2  C2  MOL     1       0.389  -0.439  -0.208 -0.076200        cc
+ATOM      3  C3  MOL     1      -0.283  -1.566  -0.009 -0.223200        cd
+ATOM      4  C4  MOL     1      -1.555  -1.189   0.582  0.572500         c
+ATOM      5  O1  MOL     1      -2.479  -1.972   0.922 -0.506100         o
+ATOM      6  C5  MOL     1      -1.586   0.265   0.714 -0.387200        cd
+ATOM      7  C6  MOL     1      -0.424   0.695   0.251  0.185000        cc
+ATOM      8  N1  MOL     1      -0.030   2.065   0.192 -0.828600        nv
+ATOM      9  H1  MOL     1       2.457   0.140  -0.094  0.052700        hc
+ATOM     10  H2  MOL     1       2.136  -1.357  -1.017  0.052700        hc
+ATOM     11  H3  MOL     1       1.711   0.240  -1.747  0.052700        hc
+ATOM     12  H4  MOL     1       0.055  -2.570  -0.267  0.163000        ha
+ATOM     13  H5  MOL     1      -2.399   0.869   1.111  0.164000        ha
+ATOM     14  H6  MOL     1       0.896   2.331  -0.172  0.418300        hn
+ATOM     15  H7  MOL     1      -0.678   2.806   0.569  0.418300        hn
+BOND    1    1    2    1     C1   C2
+BOND    2    1    9    1     C1   H1
+BOND    3    2    3    2     C2   C3
+BOND    4    2    7    1     C2   C6
+BOND    5    3    4    1     C3   C4
+BOND    6    4    6    1     C4   C5
+BOND    7    4    5    2     C4   O1
+BOND    8    6   13    1     C5   H5
+BOND    9    7    6    2     C6   C5
+BOND   10    8    7    1     N1   C6
+BOND   11    8   15    1     N1   H7
+BOND   12   10    1    1     H2   C1
+BOND   13   11    1    1     H3   C1
+BOND   14   12    3    1     H4   C3
+BOND   15   14    8    1     H6   N1

@@ -1,0 +1,1 @@
+C1=CCN[C@@H]2[C@H]1O[C@@]1([C@H]2C(=O)NC1C(=O)O)CC(=O)O	

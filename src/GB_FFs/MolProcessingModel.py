@@ -1,16 +1,13 @@
-import numpy as np
-import copy
-from typing import Optional, Tuple, List
-
 import torch
 from torch import Tensor, LongTensor
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.modules.linear import Linear
-from torch.nn.modules.dropout import Dropout
 from torch.nn.parameter import Parameter
+from typing import Optional, Tuple, List
+import numpy as np
+import copy
 
-# define the SMU activation function "https://arxiv.org/abs/2111.04682"
 class SMU(nn.Module):
     def __init__(self):
         super().__init__() # init the base class
@@ -18,7 +15,7 @@ class SMU(nn.Module):
     def forward(self, x):
         return x*(1+torch.erf(self.mu*x))/2
     
-# module to update directed bonds
+# module for Graph Attention Network
 class EDGEAttention(nn.Module):
     def __init__(self, d_model=128, dropout=0.1, num_heads=1, activation='relu', leakyrelu=0.1, bias=True):
         super(EDGEAttention, self).__init__()
@@ -83,15 +80,13 @@ class EDGEAttention(nn.Module):
         q_edge = q_edge.reshape(-1, bsz*self.num_heads, self.head_dim).transpose(0, 1) #bsz*num_heads,edge_len,head_dim
         k_edge = k_edge.reshape(-1, bsz*self.num_heads, self.head_dim).transpose(0, 1) #bsz*num_heads,edge_len,head_dim
         v_edge = v_edge.reshape(-1, bsz*self.num_heads, self.head_dim).transpose(0, 1) #bsz*num_heads,edge_len,head_dim
-
+        
         # Q and K to compute the coefficients e
         attn_output_weights = torch.bmm(q_edge, k_edge.transpose(1, 2)) #bsz*num_heads, edge_len, edge_len
         attn_output_weights = attn_output_weights * scaling
         attn_output_weights = attn_output_weights.reshape(bsz, self.num_heads, edge_len, edge_len)
         attn_output_weights = attn_output_weights.masked_fill(edge_mask.unsqueeze(1),float("-inf"))
         attn_output_weights = attn_output_weights.view(bsz * self.num_heads, edge_len, edge_len) #bsz*num_heads, edge_len, edge_len
-        
-        # compute the attention weights alpha
         attn_output_weights = torch.nn.functional.softmax(attn_output_weights, dim=-1)  #bsz*num_heads, edge_len, edge_len
         attn_output_weights =  self.dropout(attn_output_weights)
         
@@ -176,11 +171,11 @@ class NODEAttention(nn.Module):
         edge_len = edge_x.size(0)
         scaling = float(self.head_dim) ** -0.5
         
-        # self-attention fot node_x
+        # attention fot node_x
         # query/key/value matrix for attention mechanism
         q_node, k_node, v_node = self._MHA_linear(node_x, self.in_proj_weight1, self.in_proj_bias1).chunk(3, dim=-1) 
         k_edge, v_edge = self._MHA_linear(edge_x, self.in_proj_weight2, self.in_proj_bias2).chunk(2, dim=-1) 
-        
+                
         # Q remains the same
         q_node = q_node.reshape(-1, bsz*self.num_heads, self.head_dim).transpose(0, 1) #bsz*num_heads,node_len,head_dim
         
@@ -190,12 +185,14 @@ class NODEAttention(nn.Module):
         v_node = torch.cat([v_node,v_edge],dim=0)
         v_node = v_node.reshape(-1, bsz*self.num_heads, self.head_dim).transpose(0, 1) #bsz*num_heads,node_len+edge_len,head_dim
 
-        # Q and K to compute the coefficients e
         attn_output_weights = torch.bmm(q_node, k_node.transpose(1, 2)) #bsz*num_heads, node_len, node_len+edge_len
         attn_output_weights = attn_output_weights * scaling
+                
+        # Q and K to compute the coefficients e
         attn_output_weights = attn_output_weights.reshape(bsz, self.num_heads, node_len, -1)
         attn_output_weights = attn_output_weights.masked_fill(node_mask.unsqueeze(1),float("-inf"))
         attn_output_weights = attn_output_weights.view(bsz * self.num_heads, node_len, -1) #bsz*num_heads, node_len, node_len+edge_len
+        
         
         # compute the attention weights alpha
         attn_output_weights = torch.nn.functional.softmax(attn_output_weights, dim=-1)  #bsz*num_heads, node_len, node_len+edge_len
@@ -222,8 +219,7 @@ class GraphAttentionLayer(nn.Module):
         self.node_attention = NODEAttention(d_model, dropout, num_heads, activation, leakyrelu)
         self.edge_attention = EDGEAttention(d_model, dropout, num_heads, activation, leakyrelu)
 
-    def forward(self, node_x: Tensor, edge_x: Tensor, node_mask: Tensor, edge_mask: Tensor):
-        # Firstly update the directed edges and then then update the nodes
+    def forward(self, node_x: Tensor, edge_x: Tensor, node_mask: Tensor, edge_mask: Tensor) -> Tensor:
         edge_x = self.edge_attention(edge_x, edge_mask)
         node_x = self.node_attention(node_x, edge_x, node_mask)
         
@@ -236,7 +232,7 @@ class GAT(nn.Module):
         self.nb_layer = nb_layer
         self.d_layer1 = 128
         self.d_model = d_model
-        self.node_attention1 = NODEAttention(d_model=self.d_layer1, dropout=dropout, num_heads=4, activation=activation, leakyrelu=leakyrelu)
+        self.node_attention1 = NODEAttention(d_model=self.d_layer1, dropout=dropout, num_heads=2, activation=activation, leakyrelu=leakyrelu)
         self.node_attention2 = NODEAttention(d_model=d_model, dropout=dropout, num_heads=num_heads, activation=activation, leakyrelu=leakyrelu)
         
 #         transform features to vectors
@@ -255,7 +251,7 @@ class GAT(nn.Module):
     def _get_clones(self, module, N):
         return nn.modules.container.ModuleList([copy.deepcopy(module) for i in range(N)])
         
-    def forward(self, node_features:Tensor, edge_features:Tensor):
+    def forward(self, node_features:Tensor, edge_features:Tensor)->Tuple[Tensor,Tensor]:
         '''
         node_features.shape:      bsz,node_len,nb_atom_features
         edge_features.shape:      bsz,edge_len,nb_bond_features+2
@@ -273,11 +269,11 @@ class GAT(nn.Module):
                     del edges_all[i][j:]
                     break
         
-
         # Double the edge features to prepare for generating the directed edges
         edge_features = edge_features[:,:,2:].reshape(bsz*edge_len, -1).repeat(1,2).reshape(bsz, 2*edge_len, -1) # bsz,2*edge_len,num_edge_features
         
-        # convert the features to embeddings
+        
+         # convert the features to embeddings
         node_x1, node_x1_start, node_x1_end, edge_x1 = self.embedding1(node_features, edge_features)
         node_x2, node_x2_start, node_x2_end, edge_x2 = self.embedding2(node_features, edge_features)
         
@@ -293,6 +289,7 @@ class GAT(nn.Module):
         charge_output_mask = np.zeros((bsz,node_len,2*edge_len))
         for i in range(bsz):
             edges = edges_all[i]
+                
             '''
             To store the start node and end node for directed edges
             
@@ -372,7 +369,7 @@ class GAT(nn.Module):
         node_x2 = self.node_attention2(node_x2, edge_x2, node_mask_all)
         for mod in self.layers2:
             node_x2, edge_x2 = mod(node_x2, edge_x2, node_mask_all, edge_mask_all)
-            
+        
         # charge_input_mask:   0:masking       1:not masking
         charge_input_mask = (~node_mask_all[:,:,node_len:]).to(torch.float32)
         return node_x2, edge_x2, charge_input_mask, charge_output_mask
@@ -397,8 +394,8 @@ class Feature_Embedding(nn.Module):
         self.edge_ring        = nn.Embedding(2, d_model)
         self.edge_stereotype  = nn.Embedding(6, d_model)
         self.norm_node = nn.modules.normalization.LayerNorm(d_model)
-        self.norm_edge = nn.modules.normalization.LayerNorm(d_model)    
-                
+        self.norm_edge = nn.modules.normalization.LayerNorm(d_model)
+        
     def forward(self, node_features:Tensor, edge_features:Tensor):
         # 0:PAD, 1:UNK, 2:H, 3:C, 4:N, 5:O, 6:S, 7:P, 8:F, 9:Cl, 10:Br, 11:I, 12:Li, 13:Na, 14:Mg, 15:K, 16:Ca
         # But the metal elements are not used!!!
@@ -415,6 +412,7 @@ class Feature_Embedding(nn.Module):
         node_x_chirality     = self.node_chirality(node_features[:,:,5])
         # 0:-3, 1:-2, 2:-1, 3:0, 4:1, 5:2, 6:3
         node_x_formalcharge  = self.node_formalcharge(node_features[:,:,6])
+        
         node_x               = self.norm_node(node_x_element + node_x_degreee + node_x_ring + node_x_hybridization + node_x_aromatic + node_x_chirality + node_x_formalcharge)
         node_x_start         = self.node_start(node_x)
         node_x_end           = self.node_end(node_x)

@@ -1,0 +1,30 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+na-cc-os   72.900     117.480   same as na-cc-oh, penalty score=  2.0
+n2-cc-na   70.600     121.950   same as na-cc-nc, penalty score=  2.8
+n2-cc-os   71.500     121.720   same as nc-cc-os, penalty score=  2.8
+
+DIHE
+na-cc-os-cd   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+na-cc-n2-hn   2    9.500       180.000           2.000      same as X -cc-nc-X , penalty score=218.5
+cc-cd-oh-ho   2    2.100       180.000           2.000      same as X -c2-oh-X , penalty score=232.0
+cc-cd-os-cc   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+n2-cc-os-cd   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+oh-cd-os-cc   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+os-cd-oh-ho   2    2.100       180.000           2.000      same as X -c2-oh-X , penalty score=232.0
+os-cc-n2-hn   2    9.500       180.000           2.000      same as X -cc-nc-X , penalty score=218.5
+
+IMPROPER
+c3-cc-na-cc         1.1          180.0         2.0          Using the default value
+cd-h4-cc-na         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 67.2 (use general term))
+cc-oh-cd-os         1.1          180.0         2.0          Using the default value
+n2-na-cc-os         1.1          180.0         2.0          Using the default value
+
+NONBON
+
+
+

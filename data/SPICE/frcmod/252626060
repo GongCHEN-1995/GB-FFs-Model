@@ -1,0 +1,24 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+
+DIHE
+
+IMPROPER
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-ca-n          1.1          180.0         2.0          Using the default value
+c -ca-n -ca         1.1          180.0         2.0          Using the default value
+n -n -c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c -cc-n -cc         1.1          180.0         2.0          Using the default value
+cd-h4-cc-n          1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 67.2 (use general term))
+cc-h4-cd-na         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 67.2 (use general term))
+c3-cc-na-cd         1.1          180.0         2.0          Same as c2-c2-na-c3, penalty score= 42.6)
+h5-n -cc-na         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 67.5 (use general term))
+
+NONBON
+
+
+

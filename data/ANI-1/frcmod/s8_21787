@@ -1,0 +1,39 @@
+Remark line goes here
+MASS
+nu 14.010        0.530               same as nh 
+n8 14.010        0.530               same as n3 
+
+BOND
+c2-nu  416.20   1.387       same as c2-nh, penalty score=  0.0
+n8-nu  432.70   1.416       same as n3-nh, penalty score=  0.0
+hn-nu  404.60   1.012       same as hn-nh, penalty score=  0.0
+hn-n8  392.40   1.019       same as hn-n3, penalty score=  0.0
+
+ANGLE
+ne-c2-nu   71.800     123.460   same as ne-c2-nh, penalty score=  0.0
+c2-nu-n8   67.000     116.870   same as c2-nh-n3, penalty score=  0.0
+c2-nu-hn   48.600     115.090   same as c2-nh-hn, penalty score=  0.0
+c3-c2-nu   66.700     116.210   same as c3-c2-nh, penalty score=  0.0
+hn-n8-nu   50.400     108.310   same as hn-n3-nh, penalty score=  0.0
+hn-nu-n8   49.100     113.970   same as hn-nh-n3, penalty score=  0.0
+hn-n8-hn   41.400     106.400   same as hn-n3-hn, penalty score=  0.0
+
+DIHE
+ne-c2-nu-n8   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+ne-c2-nu-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+hn-n8-nu-c2   4    7.600         0.000           2.000      same as X -n3-nh-X , penalty score=  0.0
+c3-c2-nu-n8   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+c3-c2-nu-hn   4    2.700       180.000           2.000      same as X -c2-nh-X , penalty score=  0.0
+hn-n8-nu-hn   4    7.600         0.000           2.000      same as X -n3-nh-X , penalty score=  0.0
+
+IMPROPER
+c3-c3-c2-ne         1.1          180.0         2.0          Using the default value
+c3-ne-c2-nu         1.1          180.0         2.0          Using the default value
+c2-hn-nu-n8         1.1          180.0         2.0          Using the default value
+
+NONBON
+  nu          1.8240  0.1700             same as nh 
+  n8          1.8240  0.1700             same as n3 
+
+
+

@@ -1,0 +1,28 @@
+CHARGE      0.00 ( 0 )
+Formula: H6 C2 O1 
+ATOM      1  C1  MOL     1       1.791  -0.209   2.729  0.113700        c3
+ATOM      2  O1  MOL     1       3.006   0.475   2.958 -0.419600        os
+ATOM      3  C2  MOL     1       2.758   1.821   3.315  0.113700        c3
+ATOM      4  H1  MOL     1       2.038  -1.249   2.455  0.032033        h1
+ATOM      5  H2  MOL     1       1.217   0.245   1.904  0.032033        h1
+ATOM      6  H3  MOL     1       1.157  -0.225   3.631  0.032033        h1
+ATOM      7  H4  MOL     1       2.226   2.362   2.515  0.032033        h1
+ATOM      8  H5  MOL     1       2.166   1.892   4.243  0.032033        h1
+ATOM      9  H6  MOL     1       3.733   2.309   3.482  0.032033        h1
+BOND    1    1    2    1     C1   O1
+BOND    2    1    6    1     C1   H3
+BOND    3    2    3    1     O1   C2
+BOND    4    3    9    1     C2   H6
+BOND    5    3    8    1     C2   H5
+BOND    6    4    1    1     H1   C1
+BOND    7    5    1    1     H2   C1
+BOND    8    7    3    1     H4   C2
+
+CHARGE      0.00 ( 0 )
+Formula: H2 O1 
+ATOM      1  O1  MOL     1       0.812   2.780   0.611 -0.785000        oh
+ATOM      2  H1  MOL     1       1.534   2.459   1.197  0.392000        ho
+ATOM      3  H2  MOL     1       0.241   3.327   1.197  0.392000        ho
+BOND    1    1    3    1     O1   H2
+BOND    2    1    2    1     O1   H1
+

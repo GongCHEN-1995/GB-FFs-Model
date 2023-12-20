@@ -1,0 +1,51 @@
+Remark line goes here
+MASS
+cs 12.010        0.616               same as c  
+nv 14.010        0.530               same as nh 
+
+BOND
+cs-n   427.60   1.379       same as  c- n, penalty score=  0.0
+n -nv  452.50   1.402       same as  n-nh, penalty score=  0.0
+cs-s   331.30   1.672       same as  c- s, penalty score=  0.0
+cs-ss  237.90   1.800       same as  c-ss, penalty score=  0.0
+hn-nv  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+cc-ss-cs   63.700      94.890   same as c -ss-cc, penalty score=  0.0
+cd-n -cs   64.700     123.270   same as c -n -cd, penalty score=  0.0
+cd-n -nv   67.300     117.520   same as cd-n -nh, penalty score=  0.0
+n -cd-oh   72.000     119.020   same as n -cd-os, penalty score=  2.0
+n -cs-s    65.400     124.050   same as n -c -s , penalty score=  0.0
+n -cs-ss   65.400     110.290   same as n -c -ss, penalty score=  0.0
+hn-nv-n    50.900     108.170   same as hn-nh-n , penalty score=  0.0
+cs-n -nv   67.000     118.710   same as c -n -nh, penalty score=  0.0
+s -cs-ss   61.800     123.190   same as s -c -ss, penalty score=  0.0
+hn-nv-hn   40.100     115.120   same as hn-nh-hn, penalty score=  0.0
+
+DIHE
+h4-cc-ss-cs   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=232.0
+cc-cd-oh-ho   2    2.100       180.000           2.000      same as X -c2-oh-X , penalty score=232.0
+n -cs-ss-cc   2    6.200       180.000           2.000      same as X -c -ss-X , penalty score=  0.0
+s -cs-ss-cc   2    6.200       180.000           2.000      same as X -c -ss-X , penalty score=  0.0
+cd-cc-ss-cs   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=232.0
+s -cs-n -cd   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+ss-cs-n -cd   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+cd-n -nv-hn   4    4.400         0.000           2.000      same as X -n -nh-X , penalty score=  0.0
+n -cd-oh-ho   2    2.100       180.000           2.000      same as X -c2-oh-X , penalty score=232.0
+cs-n -nv-hn   4    4.400         0.000           2.000      same as X -n -nh-X , penalty score=  0.0
+s -cs-n -nv   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+ss-cs-n -nv   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+
+IMPROPER
+cd-h4-cc-ss         1.1          180.0         2.0          Using the default value
+cc-n -cd-oh         1.1          180.0         2.0          Using the default value
+cd-cs-n -nv         1.1          180.0         2.0          Using the default value
+n -s -cs-ss         1.1          180.0         2.0          Using the default value
+hn-hn-nv-n          1.1          180.0         2.0          Using the default value
+
+NONBON
+  cs          1.9080  0.0860             same as c  
+  nv          1.8240  0.1700             same as nh 
+
+
+

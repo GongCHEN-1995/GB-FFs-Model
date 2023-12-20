@@ -1,0 +1,32 @@
+CHARGE      0.00 ( 0 )
+Formula: H5 C3 Cl3 
+ATOM      1  C1  MOL     1       0.000   0.000   0.000 -0.103100        c3
+ATOM      2  C2  MOL     1      -0.197  -1.185   1.011 -0.087400        c3
+ATOM      3  C3  MOL     1       0.162  -2.562   0.470  0.264200        c3
+ATOM      4  Cl1 MOL     1       0.217  -3.780   1.792 -0.125067        cl
+ATOM      5  Cl2 MOL     1      -0.926  -3.210  -0.818 -0.125067        cl
+ATOM      6  Cl3 MOL     1       1.760  -2.372  -0.188 -0.125067        cl
+ATOM      7  H1  MOL     1      -0.752  -0.027  -0.806  0.050700        hc
+ATOM      8  H2  MOL     1       1.004  -0.008  -0.456  0.050700        hc
+ATOM      9  H3  MOL     1      -0.122   0.940   0.565  0.050700        hc
+ATOM     10  H4  MOL     1       0.531  -1.038   1.832  0.074700        hc
+ATOM     11  H5  MOL     1      -1.210  -1.192   1.457  0.074700        hc
+BOND    1    1    9    1     C1   H3
+BOND    2    1    2    1     C1   C2
+BOND    3    2   11    1     C2   H5
+BOND    4    2   10    1     C2   H4
+BOND    5    3    2    1     C3   C2
+BOND    6    3    4    1     C3  Cl1
+BOND    7    5    3    1    Cl2   C3
+BOND    8    6    3    1    Cl3   C3
+BOND    9    7    1    1     H1   C1
+BOND   10    8    1    1     H2   C1
+
+CHARGE      0.00 ( 0 )
+Formula: H2 O1 
+ATOM      1  O1  MOL     1       0.812   2.780   0.611 -0.785000        oh
+ATOM      2  H1  MOL     1       1.534   2.459   1.197  0.392000        ho
+ATOM      3  H2  MOL     1       0.241   3.327   1.197  0.392000        ho
+BOND    1    1    3    1     O1   H2
+BOND    2    1    2    1     O1   H1
+

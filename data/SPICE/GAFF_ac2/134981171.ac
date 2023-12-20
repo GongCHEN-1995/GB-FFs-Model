@@ -1,0 +1,24 @@
+CHARGE      0.00 ( 0 )
+Formula: H4 C4 N2 O1 
+ATOM      1  H   UNL     1       0.997   0.084   0.069  0.036800        h4
+ATOM      2  C   UNL     1       2.091   0.208   0.065  0.475200        c2
+ATOM      3  N   UNL     1       2.788   1.405   0.061 -0.693000        ne
+ATOM      4  C1  UNL     1       4.159   1.238   0.049  0.666200        ce
+ATOM      5  N1  UNL     1       4.891   0.071   0.047 -0.644100        nf
+ATOM      6  C2  UNL     1       4.251  -1.154   0.051  0.674500         c
+ATOM      7  O   UNL     1       4.874  -2.197   0.049 -0.492100         o
+ATOM      8  C3  UNL     1       2.732  -1.160   0.034 -0.314700        c3
+ATOM      9  H1  UNL     1       2.406  -1.684  -0.866  0.111700        hc
+ATOM     10  H2  UNL     1       2.382  -1.740   0.891  0.111700        hc
+ATOM     11  H3  UNL     1       4.774   2.149   0.041  0.067800        h5
+BOND    1    1    2    1      H    C
+BOND    2    2    3    2      C    N
+BOND    3    3    4    1      N   C1
+BOND    4    4    5    2     C1   N1
+BOND    5    5    6    1     N1   C2
+BOND    6    6    7    2     C2    O
+BOND    7    6    8    1     C2   C3
+BOND    8    2    8    1      C   C3
+BOND    9    8    9    1     C3   H1
+BOND   10    8   10    1     C3   H2
+BOND   11    4   11    1     C1   H3

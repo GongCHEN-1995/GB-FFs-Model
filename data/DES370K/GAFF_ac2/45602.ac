@@ -1,0 +1,49 @@
+CHARGE      0.00 ( 0 )
+Formula: H6 C2 O2 
+ATOM      1  O1  MOL     1       0.731   1.306   1.571 -0.598800        oh
+ATOM      2  C1  MOL     1       0.253   1.979   0.402  0.087900        c3
+ATOM      3  C2  MOL     1       0.210   3.477   0.621  0.087900        c3
+ATOM      4  O2  MOL     1      -0.609   3.816   1.729 -0.598800        oh
+ATOM      5  H1  MOL     1       1.696   1.466   1.634  0.405000        ho
+ATOM      6  H2  MOL     1       0.860   1.729  -0.489  0.052700        h1
+ATOM      7  H3  MOL     1      -0.770   1.591   0.232  0.052700        h1
+ATOM      8  H4  MOL     1       1.239   3.862   0.761  0.052700        h1
+ATOM      9  H5  MOL     1      -0.220   3.980  -0.267  0.052700        h1
+ATOM     10  H6  MOL     1      -0.374   3.183   2.440  0.405000        ho
+BOND    1    1    5    1     O1   H1
+BOND    2    2    3    1     C1   C2
+BOND    3    2    1    1     C1   O1
+BOND    4    3    8    1     C2   H4
+BOND    5    3    4    1     C2   O2
+BOND    6    4   10    1     O2   H6
+BOND    7    6    2    1     H2   C1
+BOND    8    7    2    1     H3   C1
+BOND    9    9    3    1     H5   C2
+
+CHARGE      0.00 ( 0 )
+Formula: H6 C6 
+ATOM      1  C1  MOL     1      -0.682   1.533  -0.321 -0.130000        ca
+ATOM      2  C2  MOL     1       0.272   0.719  -0.932 -0.130000        ca
+ATOM      3  C3  MOL     1       1.176  -0.003  -0.153 -0.130000        ca
+ATOM      4  C4  MOL     1       1.126   0.088   1.238 -0.130000        ca
+ATOM      5  C5  MOL     1       0.172   0.902   1.851 -0.130000        ca
+ATOM      6  C6  MOL     1      -0.732   1.624   1.071 -0.130000        ca
+ATOM      7  H1  MOL     1      -1.394   2.102  -0.934  0.130000        ha
+ATOM      8  H2  MOL     1       0.311   0.647  -2.027  0.130000        ha
+ATOM      9  H3  MOL     1       1.927  -0.644  -0.635  0.130000        ha
+ATOM     10  H4  MOL     1       1.837  -0.480   1.852  0.130000        ha
+ATOM     11  H5  MOL     1       0.133   0.974   2.945  0.130000        ha
+ATOM     12  H6  MOL     1      -1.483   2.265   1.553  0.130000        ha
+BOND    1    1    6    7     C1   C6
+BOND    2    2    1    8     C2   C1
+BOND    3    2    3    7     C2   C3
+BOND    4    3    4    8     C3   C4
+BOND    5    4    5    7     C4   C5
+BOND    6    4   10    1     C4   H4
+BOND    7    5   11    1     C5   H5
+BOND    8    6   12    1     C6   H6
+BOND    9    6    5    8     C6   C5
+BOND   10    7    1    1     H1   C1
+BOND   11    8    2    1     H2   C2
+BOND   12    9    3    1     H3   C3
+

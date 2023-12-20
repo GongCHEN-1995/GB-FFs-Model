@@ -1,0 +1,1 @@
+C1=CC(=O)C=C(/C/1=C/Nc1c(c2c(s1)N1CCC2CC1)C#N)O	

@@ -1,0 +1,32 @@
+Remark line goes here
+MASS
+nv 14.010        0.530               same as nh 
+
+BOND
+n -nv  452.50   1.402       same as  n-nh, penalty score=  0.0
+hn-nv  404.60   1.012       same as hn-nh, penalty score=  0.0
+
+ANGLE
+nv-n -os   70.698     110.855   Calculated using nh- n-os, penalty score=  0.0
+c -n -nv   67.000     118.710   same as c -n -nh, penalty score=  0.0
+hn-nv-n    50.900     108.170   same as hn-nh-n , penalty score=  0.0
+cc-os-n    65.700     111.660   same as cc-os-na, penalty score=  2.2
+hn-nv-hn   40.100     115.120   same as hn-nh-hn, penalty score=  0.0
+
+DIHE
+nd-cc-os-n    2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+h5-cc-os-n    2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+os-n -nv-hn   4    4.400         0.000           2.000      same as X -n -nh-X , penalty score=  0.0
+c -n -nv-hn   4    4.400         0.000           2.000      same as X -n -nh-X , penalty score=  0.0
+
+IMPROPER
+hn-hn-nv-n          1.1          180.0         2.0          Using the default value
+c -nv-n -os         1.1          180.0         2.0          Using the default value
+h5-nd-cc-os         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 67.5 (use general term))
+n -nd-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+
+NONBON
+  nv          1.8240  0.1700             same as nh 
+
+
+

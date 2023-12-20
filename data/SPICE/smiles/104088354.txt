@@ -1,0 +1,1 @@
+c1cc(cc(c1)Cl)c1ccc(nc1)/C=C/[C@H]1c2cc(cc(c2C[C@H]2[C@@H]1COC2=O)F)F	

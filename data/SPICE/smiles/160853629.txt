@@ -1,0 +1,1 @@
+c1ccc(cc1)C(=C)C[n+]1ccc(cc1)C1CCCCC1	

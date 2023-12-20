@@ -1,0 +1,64 @@
+CHARGE      0.00 ( 0 )
+Formula: H10 C5 
+ATOM      1  C1  MOL     1       0.098  -1.855   0.737 -0.060900        c3
+ATOM      2  C2  MOL     1       0.026  -0.373   0.500 -0.178200        c2
+ATOM      3  C3  MOL     1       0.527   0.615   1.260 -0.122400        c2
+ATOM      4  C4  MOL     1       0.353   2.058   0.859 -0.057900        c3
+ATOM      5  C5  MOL     1       1.289   0.419   2.545 -0.057900        c3
+ATOM      6  H1  MOL     1       0.644  -2.098   1.664  0.039367        hc
+ATOM      7  H2  MOL     1       0.613  -2.339  -0.110  0.039367        hc
+ATOM      8  H3  MOL     1      -0.922  -2.268   0.810  0.039367        hc
+ATOM      9  H4  MOL     1      -0.507  -0.071  -0.411  0.119000        ha
+ATOM     10  H5  MOL     1      -0.196   2.605   1.644  0.040367        hc
+ATOM     11  H6  MOL     1       1.339   2.534   0.722  0.040367        hc
+ATOM     12  H7  MOL     1      -0.210   2.139  -0.086  0.040367        hc
+ATOM     13  H8  MOL     1       0.756   0.931   3.364  0.040367        hc
+ATOM     14  H9  MOL     1       1.402  -0.646   2.810  0.040367        hc
+ATOM     15  H10 MOL     1       2.292   0.865   2.444  0.040367        hc
+BOND    1    1    8    1     C1   H3
+BOND    2    1    6    1     C1   H1
+BOND    3    2    1    1     C2   C1
+BOND    4    2    3    2     C2   C3
+BOND    5    3    5    1     C3   C5
+BOND    6    4    3    1     C4   C3
+BOND    7    4   10    1     C4   H5
+BOND    8    5   14    1     C5   H9
+BOND    9    5   13    1     C5   H8
+BOND   10    7    1    1     H2   C1
+BOND   11    9    2    1     H4   C2
+BOND   12   11    4    1     H6   C4
+BOND   13   12    4    1     H7   C4
+BOND   14   15    5    1    H10   C5
+
+CHARGE      0.00 ( 0 )
+Formula: H10 C5 
+ATOM      1  C1  MOL     1       0.098  -1.855   0.737 -0.060900        c3
+ATOM      2  C2  MOL     1       0.026  -0.373   0.500 -0.178200        c2
+ATOM      3  C3  MOL     1       0.527   0.615   1.260 -0.122400        c2
+ATOM      4  C4  MOL     1       0.353   2.058   0.859 -0.057900        c3
+ATOM      5  C5  MOL     1       1.289   0.419   2.545 -0.057900        c3
+ATOM      6  H1  MOL     1       0.644  -2.098   1.664  0.039367        hc
+ATOM      7  H2  MOL     1       0.613  -2.339  -0.110  0.039367        hc
+ATOM      8  H3  MOL     1      -0.922  -2.268   0.810  0.039367        hc
+ATOM      9  H4  MOL     1      -0.507  -0.071  -0.411  0.119000        ha
+ATOM     10  H5  MOL     1      -0.196   2.605   1.644  0.040367        hc
+ATOM     11  H6  MOL     1       1.339   2.534   0.722  0.040367        hc
+ATOM     12  H7  MOL     1      -0.210   2.139  -0.086  0.040367        hc
+ATOM     13  H8  MOL     1       0.756   0.931   3.364  0.040367        hc
+ATOM     14  H9  MOL     1       1.402  -0.646   2.810  0.040367        hc
+ATOM     15  H10 MOL     1       2.292   0.865   2.444  0.040367        hc
+BOND    1    1    8    1     C1   H3
+BOND    2    1    6    1     C1   H1
+BOND    3    2    1    1     C2   C1
+BOND    4    2    3    2     C2   C3
+BOND    5    3    5    1     C3   C5
+BOND    6    4    3    1     C4   C3
+BOND    7    4   10    1     C4   H5
+BOND    8    5   14    1     C5   H9
+BOND    9    5   13    1     C5   H8
+BOND   10    7    1    1     H2   C1
+BOND   11    9    2    1     H4   C2
+BOND   12   11    4    1     H6   C4
+BOND   13   12    4    1     H7   C4
+BOND   14   15    5    1    H10   C5
+

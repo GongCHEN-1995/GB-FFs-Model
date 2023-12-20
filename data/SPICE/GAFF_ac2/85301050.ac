@@ -1,0 +1,33 @@
+CHARGE      0.00 ( 0 )
+Formula: H2 C7 N2 Cl2 I2 
+ATOM      1  H   UNL     1       1.269  -0.059  -0.026  0.078800        h5
+ATOM      2  C   UNL     1       2.350  -0.017  -0.026  0.427700        cc
+ATOM      3  N   UNL     1       2.963  -0.970  -0.026 -0.537100        nd
+ATOM      4  C1  UNL     1       4.245  -0.539  -0.026  0.052400        ca
+ATOM      5  C2  UNL     1       4.289   0.816  -0.027 -0.020200        ca
+ATOM      6  C3  UNL     1       5.462   1.558  -0.026  0.002900        ca
+ATOM      7  C4  UNL     1       6.670   0.851  -0.023  0.097400        ca
+ATOM      8  C5  UNL     1       6.657  -0.557  -0.025 -0.014100        ca
+ATOM      9  C6  UNL     1       5.440  -1.264  -0.026  0.127400        ca
+ATOM     10  Cl  UNL     1       5.411  -2.998  -0.025 -0.022400        cl
+ATOM     11  I   UNL     1       8.483  -1.607  -0.031 -0.090900         i
+ATOM     12  Cl1 UNL     1       8.172   1.718  -0.016 -0.039400        cl
+ATOM     13  I1  UNL     1       5.391   3.657  -0.032 -0.105900         i
+ATOM     14  N1  UNL     1       3.019   1.201  -0.028 -0.278300        na
+ATOM     15  H1  UNL     1       2.638   2.138  -0.027  0.320700        hn
+BOND    1    1    2    1      H    C
+BOND    2    2    3    2      C    N
+BOND    3    3    4    1      N   C1
+BOND    4    4    5    7     C1   C2
+BOND    5    5    6    8     C2   C3
+BOND    6    6    7    7     C3   C4
+BOND    7    7    8    8     C4   C5
+BOND    8    8    9    7     C5   C6
+BOND    9    4    9    8     C1   C6
+BOND   10    9   10    1     C6   Cl
+BOND   11    8   11    1     C5    I
+BOND   12    7   12    1     C4  Cl1
+BOND   13    6   13    1     C3   I1
+BOND   14    5   14    1     C2   N1
+BOND   15    2   14    1      C   N1
+BOND   16   14   15    1     N1   H1

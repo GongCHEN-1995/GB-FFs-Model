@@ -1,0 +1,47 @@
+Remark line goes here
+MASS
+nx 14.010        0.530               same as n4 
+n7 14.010        0.530               same as n3 
+
+BOND
+c3-nx  283.30   1.511       same as c3-n4, penalty score=  0.0
+c3-n7  325.90   1.465       same as c3-n3, penalty score=  0.0
+hn-nx  373.20   1.030       same as hn-n4, penalty score=  0.0
+hn-n7  392.40   1.019       same as hn-n3, penalty score=  0.0
+
+ANGLE
+c3-c3-nx   64.200     114.210   same as c3-c3-n4, penalty score=  0.0
+c3-c3-n7   66.000     111.040   same as c3-c3-n3, penalty score=  0.0
+c3-nx-c3   62.600     109.660   same as c3-n4-c3, penalty score=  0.0
+c3-nx-hn   45.900     110.110   same as c3-n4-hn, penalty score=  0.0
+c3-n7-c3   63.800     112.350   same as c3-n3-c3, penalty score=  0.0
+c3-n7-hn   47.400     109.290   same as c3-n3-hn, penalty score=  0.0
+n7-c3-nx   67.915     112.275   Calculated using n4-c3-n3, penalty score=  0.0
+nx-c3-oh   69.387     111.610   Calculated using n4-c3-oh, penalty score=  0.0
+n7-c3-os   71.400     108.510   same as n3-c3-os, penalty score=  0.0
+o -n4-os   70.300     120.970   same as o -n4-o , penalty score=  5.5
+
+DIHE
+c3-c3-nx-c3   9    1.400         0.000           3.000      same as c3-c3-n4-c3, penalty score=  0.0
+c3-c3-nx-hn   9    1.400         0.000           3.000      same as X -c3-n4-X , penalty score=  0.0
+c3-c3-n7-c3   1    0.300         0.000          -3.000      same as c3-c3-n3-c3
+c3-c3-n7-c3   1    0.480       180.000           2.000      same as c3-c3-n3-c3, penalty score=  0.0
+c3-c3-n7-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+oh-c3-nx-c3   9    1.400         0.000           3.000      same as X -c3-n4-X , penalty score=  0.0
+os-c3-n7-c3   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+nx-c3-n7-c3   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+nx-c3-n7-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+n7-c3-nx-c3   9    1.400         0.000           3.000      same as X -c3-n4-X , penalty score=  0.0
+os-c3-n7-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+n7-c3-nx-hn   9    1.400         0.000           3.000      same as X -c3-n4-X , penalty score=  0.0
+oh-c3-nx-hn   9    1.400         0.000           3.000      same as X -c3-n4-X , penalty score=  0.0
+
+IMPROPER
+c3-c3-c2-c3         1.1          180.0         2.0          Using the default value
+
+NONBON
+  nx          1.8240  0.1700             same as n4 
+  n7          1.8240  0.1700             same as n3 
+
+
+

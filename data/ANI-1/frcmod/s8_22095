@@ -1,0 +1,39 @@
+Remark line goes here
+MASS
+n8 14.010        0.530               same as n3 
+
+BOND
+c3-n8  325.90   1.465       same as c3-n3, penalty score=  0.0
+hn-n8  392.40   1.019       same as hn-n3, penalty score=  0.0
+
+ANGLE
+cc-c3-n8   66.900     111.090   same as cc-c3-n3, penalty score=  0.0
+h1-c3-n8   49.500     109.880   same as h1-c3-n3, penalty score=  0.0
+c3-n8-hn   47.400     109.290   same as c3-n3-hn, penalty score=  0.0
+n2-cc-os   71.500     121.720   same as nc-cc-os, penalty score=  2.8
+hn-na-n2   49.800     119.550   same as hn-na-nc, penalty score=  2.8
+n2-cc-na   70.600     121.950   same as na-cc-nc, penalty score=  2.8
+na-cc-os   72.900     117.480   same as na-cc-oh, penalty score=  2.0
+hn-n8-hn   41.400     106.400   same as hn-n3-hn, penalty score=  0.0
+
+DIHE
+c3-cc-n2-na   2    9.500       180.000           2.000      same as X -cc-nc-X , penalty score=218.5
+c3-cc-os-cc   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+cc-c3-n8-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+na-cc-os-cc   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+n2-cc-os-cc   2    2.100       180.000           2.000      same as X -c2-os-X , penalty score=232.0
+os-cc-n2-na   2    9.500       180.000           2.000      same as X -cc-nc-X , penalty score=218.5
+na-cc-n2-hn   2    9.500       180.000           2.000      same as X -cc-nc-X , penalty score=218.5
+os-cc-n2-hn   2    9.500       180.000           2.000      same as X -cc-nc-X , penalty score=218.5
+h1-c3-n8-hn   6    1.800         0.000           3.000      same as X -c3-n3-X , penalty score=  0.0
+
+IMPROPER
+c3-n2-cc-os         1.1          180.0         2.0          Using the default value
+cc-hn-na-n2         1.1          180.0         2.0          Using the default value
+n2-na-cc-os         1.1          180.0         2.0          Using the default value
+
+NONBON
+  n8          1.8240  0.1700             same as n3 
+
+
+

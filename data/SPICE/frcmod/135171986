@@ -1,0 +1,21 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+ce-ss-p5   79.170      93.100   Calculated using ca-ss-p5, penalty score=  2.2
+
+DIHE
+c2-ce-ss-p5   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=237.0
+c -ce-ss-p5   2    2.200       180.000           2.000      same as X -c2-ss-X , penalty score=237.0
+
+IMPROPER
+ce-ha-c2-ha         1.1          180.0         2.0          Same as X -X -ca-ha, penalty score= 47.1 (use general term))
+c -c2-ce-ss         1.1          180.0         2.0          Using the default value
+ce-o -c -oh         1.1          180.0         2.0          Same as X -o -c -o , penalty score= 48.9 (use general term))
+
+NONBON
+
+
+
