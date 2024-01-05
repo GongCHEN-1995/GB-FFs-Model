@@ -1,6 +1,6 @@
-#Advancing Force Fields Parameterization: A Directed Graph Attention Networks Approach
+Advancing Force Fields Parameterization: A Directed Graph Attention Networks Approach
 
-=======================================================================================
+==================================================================================
 
 Authors: Gong Chen, Théo Jaffrelot Inizan, Thomas Plé, Louis Lagardère, Jean-Philip Piquemal, Yvon Maday
 
@@ -8,8 +8,8 @@ Graph-Based Force Fields (GB-FFs) model is to directly derive parameters for the
 
 <p align="center"><img src="figure/GB-FFs_framework.png" width=80%></p>
 
-##Dependencies
---------------
+Dependencies
+-------------
 
 To run the code, it requires jupyter, rdkit and pytorch.
 
@@ -23,8 +23,8 @@ conda install -c conda-forge pytorch-gpu
 (or) conda install -c conda-forge pytorch
 ```
 
-##Model Architecture
---------------------
+Model Architecture
+-------------------
 
 GB-FFs Model is composed of three inter-connected parts. 
 
@@ -41,8 +41,8 @@ Symmetry-Preserving Parameter Generator is the last part that predicts all rest 
 <p align="center"><img src="figure/GB-param_generator_framework.png" width=80%></p>
 
 
-##Functional Forms
-------------------
+Functional Forms
+-----------------
 
 We did a preliminary investigation of the performance of different functional forms in GAFF. 
 
@@ -54,8 +54,8 @@ The model "GB-FFs UB" applies the complete morse function for bond strectching e
 
 <p align="center"><img src="figure/GB-bending_distance.png" width=40%></p>
 
-##Utilization
--------------
+Utilization
+-----------
 
 Our work is trained for optimizing General Amber Force Field (GAFF) but it can be extended to other non-polarizable force fields without significant modifications.
 
@@ -64,8 +64,8 @@ To take advantage of the existing databases, we first pre-train GB-FFs models on
 The GB-FFs mdoels are then fine-tuned on SPICE and DES370K databases. If you want to reproduce this part, please use jupyter notebook to open FineTuning.ipynb and to run the code.
 
 
-##GB-FFs Models' performance
-----------------------------
+GB-FFs Models' performance
+--------------------------
 
 Capability to predict the atom types in GAFF:
 
@@ -79,8 +79,8 @@ New parameters for hydration free rnergy calculations:
 
 <p align="center"><img src="figure/results.png" width=80%></p>
 
-##Citation
-----------
+Citation
+--------
 
 Please kindly cite this paper if you use the code.
 ```
@@ -88,7 +88,7 @@ Gong Chen, Théo Jaffrelot Inizan, Thomas Plé, Louis Lagardère, Jean-Philip Pi
 
 ```
 
-##License
----------
+License
+-------
 
 This project is licensed under the terms of the MIT license. See [LICENSE](https://github.com/GongCHEN-1995/D-GATs/blob/main/LICENSE) for additional details.
