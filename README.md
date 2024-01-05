@@ -1,6 +1,5 @@
 Advancing Force Fields Parameterization: A Directed Graph Attention Networks Approach
-
-==================================================================================
+=====================================================================================
 
 Authors: Gong Chen, Théo Jaffrelot Inizan, Thomas Plé, Louis Lagardère, Jean-Philip Piquemal, Yvon Maday
 
@@ -17,6 +16,9 @@ We advice the following environment:
 ```
 conda create -n GB_FFs python=3.8
 conda activate GB_FFs
+conda install numpy
+conda install pandas
+conda install h5py
 conda install -c anaconda jupyter
 conda install -c rdkit rdkit
 conda install -c conda-forge pytorch-gpu 
