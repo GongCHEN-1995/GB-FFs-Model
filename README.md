@@ -54,7 +54,7 @@ The model "GB-FFs Morse" replace the harmonic function for bond strectching ener
 
 The model "GB-FFs UB" applies the complete morse function for bond strectching energy. And it also considers the Urey-Bradely term
 
-<p align="center"><img src="figure/bending_distance.png" width=40%></p>
+<p align="center"><img src="figure/bending_distance.png" width=20%></p>
 
 Utilization
 -----------
@@ -77,16 +77,16 @@ Performance of all models on various databases:
 
 <p align="center"><img src="figure/results.png" width=80%></p>
 
-New parameters for hydration free rnergy calculations:
+New parameters for hydration free energy calculations:
 
-<p align="center"><img src="figure/results.png" width=80%></p>
+<p align="center"><img src="figure/HFE_GAFF.png" width=48%><img src="figure/HFE_GB_FFs_GAFF.png" width=48%></p>
 
 Citation
 --------
 
 Please kindly cite this paper if you use the code.
 ```
-Gong Chen, Théo Jaffrelot Inizan, Thomas Plé, Louis Lagardère, Jean-Philip Piquemal, and Yvon Maday. Advancing force fields parameteriza- tion: A directed graph attention networks approach. 2023.
+Gong Chen, Théo Jaffrelot Inizan, Thomas Plé, Louis Lagardère, Jean-Philip Piquemal, and Yvon Maday. Advancing force fields parameterization: A directed graph attention networks approach. 2023.
 
 ```
 
