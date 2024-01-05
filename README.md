@@ -30,15 +30,15 @@ GB-FFs Model is composed of three inter-connected parts.
 
 The first is Molecule Processing Model which is used to aggregate information and extract atom/bond representations.
 
-<p align="center"><img src="figure/GB-D_GATs_framework.png" width=80%></p>
+<p align="center"><img src="figure/D_GATs_framework.png" width=80%></p>
 
 The second part is the Charge Transfer Model which assumes that charge can move between connected atoms. Based on the bond representations from Molecule Processing Model, this part predicts the charge moves in/out for each atoms.
 
-<p align="center"><img src="figure/GB-charge_transfer.png" width=80%></p>
+<p align="center"><img src="figure/charge_transfer.png" width=80%></p>
 
 Symmetry-Preserving Parameter Generator is the last part that predicts all rest force field parameters.
 
-<p align="center"><img src="figure/GB-param_generator_framework.png" width=80%></p>
+<p align="center"><img src="figure/param_generator_framework.png" width=80%></p>
 
 
 Functional Forms
@@ -52,7 +52,7 @@ The model "GB-FFs Morse" replace the harmonic function for bond strectching ener
 
 The model "GB-FFs UB" applies the complete morse function for bond strectching energy. And it also considers the Urey-Bradely term
 
-<p align="center"><img src="figure/GB-bending_distance.png" width=40%></p>
+<p align="center"><img src="figure/bending_distance.png" width=40%></p>
 
 Utilization
 -----------
