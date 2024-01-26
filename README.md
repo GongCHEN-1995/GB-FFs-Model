@@ -61,10 +61,11 @@ Utilization
 
 While our work is primarily trained to optimize the General Amber Force Field (GAFF), it can be extended to other non-polarizable force fields with minimal modifications.
 
-To leverage existing databases, we initially pre-train GB-FFs models on ANI-1 database. To reproduce this step, simply open 'PreTraining.ipynb' in Jupyter Notebook and execute the provided code.
+To leverage existing databases, we initially pre-train GB-FFs models on ANI-1 database. To reproduce this step, you need download the ANI-1 databse and pre-process the molecules (data/ANI-1/ANI-1.ipynb). Then you can open 'PreTraining.ipynb' in Jupyter Notebook and execute the provided code. Then you can open 'PreTraining.ipynb' in Jupyter Notebook and execute the provided code. 
 
-Subsequently, the GB-FFs models undergo fine-tuning on the SPICE and DES370K databases. For reproduction, please use Jupyter Notebook to open 'FineTuning.ipynb' and run the code.
+Subsequently, the GB-FFs models undergo fine-tuning on the SPICE and DES370K databases. For reproduction, you need download the databses and pre-process the molecules (data/DES370K/DES370K.ipynb and data/SPICE/SPICE.ipynb). Then please use Jupyter Notebook to open 'FineTuning.ipynb' and run the code.
 
+To test the code, there are already 100 pre-processed molecules in data/ANI-1, data/DES370K and data/SPICE. You only need download the original databases (the command "os.system('wget ...')") and then you can run 'PreTraining.ipynb' and 'FineTuning.ipynb'.
 
 GB-FFs Models' performance
 --------------------------
