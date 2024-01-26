@@ -6,18 +6,12 @@ import itertools
 import pandas as pd
 import random
 import copy
-import functools
-import subprocess
-import random
-from multiprocessing import Pool
+import torch
 
 from rdkit import Chem
 from rdkit.Chem import AllChem
 from rdkit import RDLogger
 RDLogger.DisableLog('rdApp.*') #hiding the warning messages
-
-import torch
-from torch import Tensor, LongTensor
 
 class Molecule():
     def __init__(self, mol_name, dataset, GAFF, bond_morse=False, bool_ub=False, max_len=100, max_ring=15, print_info=False):
