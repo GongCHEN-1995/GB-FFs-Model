@@ -67,6 +67,11 @@ Subsequently, the GB-FFs models undergo fine-tuning on the SPICE and DES370K dat
 
 To test the code, there are already 100 pre-processed molecules in data/ANI-1, data/DES370K and data/SPICE. You only need download the original databases (the command "os.system('wget ...')") and then you can run 'PreTraining.ipynb' and 'FineTuning.ipynb'.
 
+To generate the ParaFileGenerator.ipynb, users need provide the PDB files (in GeneratingPara/pdb/) or SDF files (in GeneratingPara/sdf/) and SMILES (in GeneratingPara/smiles/) is optional. We recommend users to provide SMILES and SDF files as inputs. Then you can run 'ParaFileGenerator.ipynb' to generate parameter files.
+
+To test the code, there are already 3 sdf files in GeneratingPara/sdf. You can run 'ParaFileGenerator.ipynb' directly.
+
+
 GB-FFs Models' performance
 --------------------------
 
