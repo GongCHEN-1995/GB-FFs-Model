@@ -31,15 +31,15 @@ GB-FFs Model is composed of three inter-connected parts.
 
 The first is Molecule Processing Model which is used to aggregate information and extract atom/bond representations.
 
-<p align="center"><img src="figure/GB-D_GATs_framework.png" width=80%></p>
+<p align="center"><img src="figure/D_GATs_framework.png" width=80%></p>
 
 The second part is the Charge Transfer Model which assumes that charge can move between connected atoms. Based on the bond representations from Molecule Processing Model, this part predicts the charge moves in/out for each atoms.
 
-<p align="center"><img src="figure/GB-charge_transfer.png" width=80%></p>
+<p align="center"><img src="figure/charge_transfer.png" width=80%></p>
 
 Symmetry-Preserving Parameter Generator is the last part that predicts all rest force field parameters.
 
-<p align="center"><img src="figure/GB-param_generator_framework.png" width=80%></p>
+<p align="center"><img src="figure/param_generator_framework.png" width=80%></p>
 
 
 Functional Forms
@@ -76,9 +76,9 @@ Performance of all models on various databases:
 
 <p align="center"><img src="figure/results.png" width=80%></p>
 
-New parameters for hydration free rnergy calculations:
+Comparaison of the performance for hydration free energy calculations:
 
-<p align="center"><img src="figure/results.png" width=80%></p>
+<p align="center"><img src="figure/HFE_GAFF.png" width=48%><img src="figure/HFE_GB_FFs_GAFF.png" width=48%></p>
 
 Citation
 --------
