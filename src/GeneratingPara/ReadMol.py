@@ -73,12 +73,17 @@ class Molecule():
             
         if TmpMol is None:
             raise RuntimeError(self.mol_name + ' Fail to read molecule by RDKIT!!!')
+        
         template = AllChem.MolFromSmiles(self.smiles, sanitize=True)
-        template = Chem.AddHs(template)
-        try:
-            mol = AllChem.AssignBondOrdersFromTemplate(template, TmpMol)
-        except:
-            raise RuntimeError(self.mol_name+' wrong assign bond order')
+        if template is None:
+            template = mol = TmpMol
+        else:
+            template = Chem.AddHs(template)
+            try:
+                mol = AllChem.AssignBondOrdersFromTemplate(template, TmpMol)
+            except:
+                print(self.mol_name+': wrong assign bond order! Using the coordinate molecule now.')
+                template = mol = TmpMol
         self.nb_shot = len(mol.GetConformers())
         self.process_mol_with_RDKit(mol, template)
         
@@ -270,17 +275,19 @@ class Molecule():
         nodes_features = []
         edges = []
         edges_features = []
-
-        node_len = self.max_len
-        edge_len = self.max_len + self.max_ring
         
         all_ele = ['PAD', 'UNK', 'H', 'C', 'N', 'O', 'S', 'P', 'F', 'Cl', 'Br', 'I', 'Na', 'Mg', 'K', 'Ca']
         ele2index = {j : i for i,j in enumerate(all_ele)}
         num_ele = len(all_ele)
         
         mol_atoms = mol.GetAtoms()
+        if self.max_len == 0:
+            self.max_len = len(mol_atoms)
         template_atoms = template.GetAtoms()
         template_bonds = template.GetBonds()
+        node_len = self.max_len
+        edge_len = self.max_len + self.max_ring
+        
         if len(mol_atoms) <= node_len and len(template_bonds) > 0:  
             for i in range(len(mol_atoms)): 
                 atom = template_atoms[mol2template[i]]
@@ -670,8 +677,15 @@ torsion       0    0    0    0        0.000   0.0  1  0.000 180.0  2  0.000   0.
             else:
                 TmpMol = AllChem.SDMolSupplier(filename,removeHs=False)[0]
             template = AllChem.MolFromSmiles(self.smiles, sanitize=True)
-            template = Chem.AddHs(template)
-            mol = AllChem.AssignBondOrdersFromTemplate(template, TmpMol)
+            if template is None:
+                template = TmpMol
+                mol = TmpMol
+            else:
+                template = Chem.AddHs(template)
+                try:
+                    mol = AllChem.AssignBondOrdersFromTemplate(template, TmpMol)
+                except:
+                    template = mol = TmpMol
             coord_x, coord_y, coord_z = self.get_coordinate(mol)
             atoms = mol.GetAtoms()
 
@@ -698,15 +712,21 @@ def check_file(name):
     smiles_path = './GeneratingPara/smiles/'
     bool_pdb = False
     bool_sdf = False
+    bool_smiles = False
     
     if os.path.exists(pdb_path + name + '.pdb'):
         bool_pdb = True
     if os.path.exists(sdf_path + name + '.sdf'):
         bool_sdf = True
+    if os.path.exists(smiles_path + name + '.txt'):
+        bool_smiles = True
     if not (bool_pdb or bool_sdf):
-        raise RuntimeError('Must provide SDF or PDB file to ensure the atom order!')
+        if bool_smiles:
+            os.system('obabel -ismi ' + smiles_path + name + '.txt -osdf -O ' + sdf_path + name + '.sdf --gen3d')
+        else:
+            raise RuntimeError(name + ': Must provide SMILES or SDF file or PDB file!')
         
-    if not os.path.exists(smiles_path + name + '.txt'):
+    if not bool_smiles:
         if bool_sdf:
             os.system('obabel -isdf ' + sdf_path + name + '.sdf -osmi -O ' + smiles_path + name + '.txt')
         elif bool_pdb:
